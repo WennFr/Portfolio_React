@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,600;0,700;1,400&display=swap');
+
+$font-size-standard: 16px;
+$font-lineheight-small: 1;
+$font-lineheight-standard: 1.5;
+$font-poppins: 'Nunito', sans-serif;
+
+$font-weight-light: 200;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+@mixin default-font {
+    font-size: 1em;
+    font-weight: $font-weight-regular;
+    font-family: $font-poppins;
+    line-height: $font-lineheight-standard;
+}
+
+@mixin font-title-1 {
+    font-size: 4.063em;
+    font-weight: $font-weight-bold;
+    font-family: $font-poppins;
+    line-height: $font-lineheight-small;
+    margin-bottom: 2em;
+}
