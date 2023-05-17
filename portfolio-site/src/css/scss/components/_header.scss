@@ -1,4 +1,25 @@
-header{
-    height: 400px;
-    color: $color-theme;
+header {
+    //  background-color: $color-dark-1;
+    //  background-color: rgba(63, 78, 79, 0.3);
+    height: 100px;
+    font-size: 1.5em;
+
+
+
+    .links {
+        @include content-center;
+        justify-content: end;
+        .link {
+            font-weight: $font-weight-light;
+            color: $color-light-2;
+            
+            text-decoration: none;
+            transition: color 0.15s;
+            margin: 10px 12px;
+
+        }
+
+
+    }
+
 }

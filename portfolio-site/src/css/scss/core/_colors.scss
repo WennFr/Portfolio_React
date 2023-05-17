@@ -1,4 +1,4 @@
-$color-theme: #a27b5c;
+$color-theme: #A27B5C;
 
 $color-dark-1: #2c3639;
 $color-dark-2: #3f4e4f;
@@ -9,5 +9,5 @@ $color-light-2: #dcd7c9;
 
 @mixin default-colors{
     background-color: $color-dark-1;
-    color: $color-light-1;
+    color: $color-light-2;
 }
