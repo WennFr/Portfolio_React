@@ -1,0 +1,49 @@
+.btn{
+
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+}
+
+.button-1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3f4e4f;
+    color: $color-light-2;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    width: 150px;
+    margin: 0 5px;
+    &:hover {
+      background-color: lighten(#3f4e4f, 10%);
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .button-2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $color-theme;
+    color: $color-light-2;
+    border: none;
+    width: 150px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin: 0 5px;
+  
+    &:hover {
+      background-color: lighten(#3f4e4f, 10%);
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3);
+    }
+  }

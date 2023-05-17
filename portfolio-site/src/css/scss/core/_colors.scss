@@ -6,6 +6,8 @@ $color-dark-2: #3f4e4f;
 $color-light-1: #ffffff;
 $color-light-2: #dcd7c9;
 
+$color-shadow-1: rgba(0, 0, 0, 0.10);
+$color-shadow-2: rgba(112, 112, 112, 0.4);
 
 @mixin default-colors{
     background-color: $color-dark-1;

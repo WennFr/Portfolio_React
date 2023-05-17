@@ -1,0 +1,39 @@
+.main-content {
+    margin-top: 50px;
+    text-align: center;
+
+    h1 {
+        color: $color-light-2;
+        font-weight: 400;
+        font-size: 3em;
+        margin-bottom: 20px;
+
+    }
+
+    p {
+        margin-bottom: 20px;
+        font-size: 2em;
+
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        @include content-center;
+
+        .main-img {
+            width: 32%;
+            height: auto;
+            border-radius: 11%;
+            box-shadow: 0 0 10px 1px $color-dark-2;
+
+        }
+    }
+
+    .button-group {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+}

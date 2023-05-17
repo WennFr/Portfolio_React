@@ -1,25 +1,38 @@
 header {
-    //  background-color: $color-dark-1;
-    //  background-color: rgba(63, 78, 79, 0.3);
-    height: 100px;
     font-size: 1.5em;
-
-
-
-    .links {
-        @include content-center;
+    box-shadow: 0 0 2px 1px $color-shadow-1;
+    position: sticky;
+  
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; // Divide the header into three equal parts
+      grid-template-areas: "weather . links"; // Define the grid areas
+  
+      .weather {
+        grid-area: weather; // Place the weather in the "weather" grid area
+        display: flex;
         justify-content: end;
-        .link {
-            font-weight: $font-weight-light;
-            color: $color-light-2;
-            
-            text-decoration: none;
-            transition: color 0.15s;
-            margin: 10px 12px;
 
+        span{
+            color: $color-theme;
         }
-
-
+      }
+  
+      .links {
+        grid-area: links; // Place the links in the "links" grid area
+        justify-self: end; // Align the links to the right within the grid area
+  
+        .link {
+          font-weight: $font-weight-light;
+          color: $color-light-2;
+          text-decoration: none;
+          transition: color 0.15s;
+          margin: 10px 13px;
+        }
+        span{
+            color: $color-theme;
+        }
+      }
     }
-
-}
+  }
+  
