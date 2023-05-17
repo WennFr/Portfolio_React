@@ -4,26 +4,24 @@ import { Link } from 'react-router-dom';
 
 
 const Header = () => {
-    return (
-        <header>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/about">About Me</Link>
-            </li>
-            <li>
-              <Link to="/experience">Experience</Link>
-            </li>
-            <li>
-              <Link to="/portfolio">Portfolio</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    )
-  }
-  
-  export default Header
+  return (
+    <header>
+      <nav class="container">
+        <div>
+          <Link to="/about">About Me</Link>
+        </div>
+        <div>
+          <Link to="/experience">Experience</Link>
+        </div>
+        <div>
+          <Link to="/portfolio">Portfolio</Link>
+        </div>
+        <div>
+          <Link to="/contact">Contact</Link>
+        </div>
+      </nav>
+    </header>
+  )
+}
+
+export default Header

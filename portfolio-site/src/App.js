@@ -1,3 +1,4 @@
+import './css/style.min.css';
 import Home from "./components/views/Home";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
