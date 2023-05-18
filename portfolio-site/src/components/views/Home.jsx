@@ -6,6 +6,7 @@ import About from './About'
 import Experience from './Experience'
 import CardLine from '../partials/CardLine'
 import Portfolio from './Portfolio'
+import Reference from './Reference'
 
 
 
@@ -21,7 +22,8 @@ const Home = () => {
         <CardLine />
         <Portfolio />
         <CardLine />
-
+        <Reference />
+        <CardLine />
         </>
     )
 

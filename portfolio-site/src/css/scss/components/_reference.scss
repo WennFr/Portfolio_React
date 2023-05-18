@@ -1,9 +1,8 @@
-.experience {
-
+.reference{
     .cont {
         @include content-center;
         border-radius: 10px;
-       
+     
     }
 
     .content-card {
@@ -15,15 +14,13 @@
         box-shadow: 0 0 3px 1px $color-dark-2;
 
         transition: transform 0.5s ease; 
-        backface-visibility: hidden;
 
         &:hover {
             transform: scale(1.05);
          
         }
 
-
-        .body{
+        .body {
             color: $color-light-2;
 
             h2 {
@@ -35,27 +32,28 @@
                 margin-top: 1rem;
             }
 
-            .text {
-                padding-top: 1rem;
+            h3 {
+                color: $color-light-2;
+                font-weight: 400;
+                margin-bottom: 20px;
                 text-align: center;
+                margin-top: 1rem;
+            }
+
+            .text {
                 @include content-center;
-                display: flex; // Use flexbox layout
-                flex-wrap: wrap; // Allow icons to wrap to the next row
-        
-                .icon {
-                    color: $color-light-2;
+                text-align: center;
+
+                p {
                     padding-top: 0.625rem;
                     padding-bottom: 1.25rem;
-                    font-size: 5em;
+                    font-size: 1em;
                     width: 75vh;
                     font-weight: 400;
-                    flex-basis: 33.33%;
-                    
                 }
-                padding-bottom: 1rem;
-
             }
-            
         }
     }
+
+
 }
