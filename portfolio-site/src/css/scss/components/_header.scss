@@ -3,15 +3,17 @@ header {
     box-shadow: 0 0 2px 1px $color-shadow-1;
     position: sticky;
   
-    .container {
+    .cont {
       display: grid;
-      grid-template-columns: 1fr 1fr; // Divide the header into three equal parts
-      grid-template-areas: "weather . links"; // Define the grid areas
+      grid-template-columns: 1fr auto 1fr; 
+
+      grid-template-areas: "weather . links"; 
   
       .weather {
-        grid-area: weather; // Place the weather in the "weather" grid area
+        grid-area: weather; 
         display: flex;
-        justify-content: end;
+        align-items: center;
+        justify-content: center;
 
         span{
             color: $color-theme;
@@ -19,15 +21,19 @@ header {
       }
   
       .links {
-        grid-area: links; // Place the links in the "links" grid area
-        justify-self: end; // Align the links to the right within the grid area
-  
+        grid-area: links; 
+        display: flex;
+        justify-content:safe;
+        justify-content: center;
+        margin-left: 10px;
+        
         .link {
           font-weight: $font-weight-light;
           color: $color-light-2;
           text-decoration: none;
           transition: color 0.15s;
           margin: 10px 13px;
+
         }
         span{
             color: $color-theme;

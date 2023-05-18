@@ -17,7 +17,7 @@
     width: 150px;
     margin: 0 5px;
     &:hover {
-      background-color: lighten(#3f4e4f, 10%);
+      background-color: $color-theme
     }
   
     &:focus {
@@ -39,7 +39,7 @@
     margin: 0 5px;
   
     &:hover {
-      background-color: lighten(#3f4e4f, 10%);
+      background-color: #3f4e4f
     }
   
     &:focus {
