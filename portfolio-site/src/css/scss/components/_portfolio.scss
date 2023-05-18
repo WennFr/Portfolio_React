@@ -1,0 +1,127 @@
+.portfolio {
+
+
+    .timeline {
+        position: relative;
+        border-radius: 4px;
+        padding: 5rem;
+        overflow: hidden;
+        height: auto !important;
+      
+      }
+      
+      .timeline .line {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -2px;
+        border-right: 2.5px dashed $color-theme;
+        height: 100%;
+      }
+
+
+
+
+    .timeline-row {
+        padding-left: 50%;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .timeline-row .timeline-date {
+        position: absolute;
+        right: 50%;
+        top: 15px;
+        text-align: right;
+        margin-right: 20px;
+        color: $color-light-2;
+        font-size: 1.5rem;
+    }
+
+    .timeline-row .timeline-date small {
+        display: block;
+        font-size: 0.8rem;
+    }
+
+    .timeline-row .timeline-content {
+        position: relative;
+        padding: 20px 30px;
+        background: $color-dark-2;
+        border: thin solid $color-theme;
+        box-shadow: 0 0 3px 1px $color-dark-2;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .timeline-row .timeline-content:after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        height: 16px;
+        width: 16px;
+        background: $color-dark-2;
+    }
+
+    .timeline-row .timeline-content:before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: -50.3px;
+        width: 20px;
+        height: 20px;
+        background: $color-theme;
+        border: 2px dashed $color-theme;
+    }
+
+    .timeline-row .timeline-content p {
+        margin-bottom: 30px;
+        line-height: 150%;
+    }
+
+    .timeline-row:nth-child(even) .timeline-content {
+        margin-left: 40px;
+        text-align: left;
+    }
+
+    .timeline-row:nth-child(even) .timeline-content:after {
+        left: -8px;
+        right: initial;
+        border-bottom: 0;
+        border-left: 0;
+        transform: rotate(-135deg);
+    }
+
+    .timeline-row:nth-child(even) .timeline-content:before {
+        left: -52px;
+        right: initial;
+    }
+
+    .timeline-row:nth-child(odd) {
+        padding-left: 0;
+        padding-right: 50%;
+    }
+
+    .timeline-row:nth-child(odd) .timeline-date {
+        right: auto;
+        left: 50%;
+        text-align: left;
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+    .timeline-row:nth-child(odd) .timeline-content {
+        margin-right: 40px;
+    }
+
+    .timeline-row:nth-child(odd) .timeline-content:after {
+        right: -8px;
+        border-left: 0;
+        border-bottom: 0;
+        transform: rotate(45deg);
+    }
+
+
+}

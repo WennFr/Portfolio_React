@@ -5,6 +5,7 @@ import LandingPage from './LandingPage'
 import About from './About'
 import Experience from './Experience'
 import CardLine from '../partials/CardLine'
+import Portfolio from './Portfolio'
 
 
 
@@ -17,6 +18,10 @@ const Home = () => {
         <About />
         <CardLine />
         <Experience />
+        <CardLine />
+        <Portfolio />
+        <CardLine />
+
         </>
     )
 

@@ -1,0 +1,27 @@
+.parent-line {
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 5rem;
+    overflow: hidden;
+    height: 500px;
+  
+  }
+  
+  .parent-line .line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    border-right: 2.5px dashed $color-theme;
+    height: 100%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  

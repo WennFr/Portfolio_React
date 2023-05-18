@@ -16,9 +16,9 @@ const LandingPage = () => {
                         <img className='main-img' src={MainImg} alt="Main Image" />
                     </div>
                     <div className='button-group'>
-                        <a className='button-1'>CV &nbsp;<i class="fa fa-download"></i></a>
+                        <a className='button-1'>CV &nbsp;<i className="fa fa-download"></i></a>
 
-                        <a className='button-2'>Kontakt&nbsp;<i class="fas fa-envelope"></i></a>
+                        <a className='button-2'>Kontakt&nbsp;<i className="fas fa-envelope"></i></a>
                         
                     </div>
                 </div>

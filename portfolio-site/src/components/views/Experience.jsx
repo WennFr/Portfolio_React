@@ -11,13 +11,13 @@ const Experience = () => {
                         <div className="body">
                             <h2>Kunskap</h2>
                             <div className='text'>
-                                <i class="icon devicon-csharp-plain-wordmark"></i>
-                                <i class="icon devicon-dot-net-plain-wordmark"></i>
-                                <i class="icon devicon-microsoftsqlserver-plain-wordmark"></i>
-                                <i class="icon devicon-html5-plain-wordmark"></i>
-                                <i class="icon devicon-css3-plain-wordmark"></i>
-                                <i class="icon fa-brands fa-sass"></i>
-                                <i class="icon devicon-react-original-wordmark"></i>
+                                <i className="icon devicon-csharp-plain-wordmark"></i>
+                                <i className="icon devicon-dot-net-plain-wordmark"></i>
+                                <i className="icon devicon-microsoftsqlserver-plain-wordmark"></i>
+                                <i className="icon devicon-html5-plain-wordmark"></i>
+                                <i className="icon devicon-css3-plain-wordmark"></i>
+                                <i className="icon fa-brands fa-sass"></i>
+                                <i className="icon devicon-react-original-wordmark"></i>
                             </div>
 
                         </div>
