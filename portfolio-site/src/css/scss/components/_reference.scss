@@ -35,6 +35,27 @@
       .body {
         color: $color-light-2;
   
+
+
+        .progress-bar-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+            padding-bottom: 1rem;
+          }
+          
+          .progress-bar {
+            width: 20px;
+            height: 5px;
+            background-color: #ccc;
+            margin: 0 2px;
+          }
+          
+          .progress-bar.active {
+            background-color: $color-theme;
+          }
+
         h2 {
           color: $color-light-2;
           font-weight: 400;

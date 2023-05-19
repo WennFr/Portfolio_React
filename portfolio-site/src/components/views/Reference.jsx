@@ -17,6 +17,7 @@ const references = [
         quote: '"Suverän!"',
     },
 
+    
 ];
 
 const Reference = () => {
@@ -30,6 +31,8 @@ const Reference = () => {
       return references.map((reference, index) => {
         const isActive = index === currentIndex;
         const cardClassName = `content-card ${isActive ? 'active' : ''}`;
+        const indicator = isActive ? `${index + 1} / ${references.length}` : '';
+        const progressBarClassName = `progress-bar ${isActive ? 'active' : ''}`;
   
         return (
           <div
@@ -44,6 +47,14 @@ const Reference = () => {
                 <div className="text">
                   <p>{reference.quote}</p>
                 </div>
+                <div className="progress-bar-container">
+              {references.map((_, i) => (
+                <div
+                  key={i}
+                  className={i === currentIndex ? progressBarClassName : 'progress-bar'}
+                ></div>
+              ))}
+            </div>
               </div>
             )}
           </div>
