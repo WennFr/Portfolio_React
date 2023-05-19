@@ -7,6 +7,7 @@ import Experience from './Experience'
 import CardLine from '../partials/CardLine'
 import Portfolio from './Portfolio'
 import Reference from './Reference'
+import Contact from './Contact'
 
 
 
@@ -24,6 +25,7 @@ const Home = () => {
         <CardLine />
         <Reference />
         <CardLine />
+        <Contact />
         </>
     )
 
