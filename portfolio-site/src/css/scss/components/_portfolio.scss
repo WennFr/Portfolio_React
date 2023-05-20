@@ -8,17 +8,17 @@
         padding-right: 5rem;
         overflow: hidden;
         height: auto !important;
-      
-      }
-      
-      .timeline .line {
+
+    }
+
+    .timeline .line {
         position: absolute;
         top: 0;
         left: 50%;
         margin-left: -2px;
         border-right: 2.5px dashed $color-theme;
         height: 100%;
-      }
+    }
 
 
 
@@ -55,6 +55,11 @@
         justify-content: start;
         flex-direction: column;
         text-align: left;
+
+        h3 {
+            padding-bottom: 1rem;;
+        }
+
     }
 
     .timeline-row .timeline-content:after {

@@ -13,7 +13,7 @@ namespace ProjectInformationAPI.Data
 				{
 					Title = "BankManagerApp",
 					Description =
-						"BankManagerApp är ett .NET-projekt skapat i razor pages som ger en simulerad bankadministrationsupplevelse. Det innehåller fyra projekt som alla är relaterade till samma fiktiva bank vid namn Blue Ridge Bank som hanterar skandinaviska konton.",
+						"Ett .NET-razorprojekt som simulerar en bankadminsida. Innehåller fyra projekt alla relaterade till samma fiktiva bank som hanterar konton, kunder och användare.",
 					Year = "2023",
 					Month = "Maj",
 					GitUrl = "https://github.com/WennFr/BankManagerApp",
@@ -24,7 +24,7 @@ namespace ProjectInformationAPI.Data
 				new ProjectData
 				{
 					Title = "AdSiteWebAPI",
-					Description = "Ett .NET web-API för en fiktiv annonssida.Skapa,läs,uppdatera och radera annonser och bud!  ",
+					Description = "Ett .NET web-API för en annonssida. CRUD:a annonser och bud!  ",
 					Year = "2023",
 					Month = "Maj",
 					GitUrl = "https://github.com/WennFr/AdSiteWebAPI",
@@ -34,7 +34,7 @@ namespace ProjectInformationAPI.Data
 				new ProjectData
 				{
 					Title = "Case_fixxo",
-					Description = "En fiktiv online-klädesbutik formad efter en designmall.",
+					Description = "En fiktiv onlineklädesbutik formad efter en designmall.",
 					Year = "2023",
 					Month = "Apr",
 					GitUrl = "https://github.com/WennFr/Case_fixxo_FW",
@@ -44,7 +44,7 @@ namespace ProjectInformationAPI.Data
 				new ProjectData
 				{
 					Title = "KyhProject1",
-					Description = "Ett tredelat konsolprojekt som inehåller en formskapare, miniräknare och sten,sax,påse-spel. Skapat i C# med ef code first.",
+					Description = "Ett konsolprojekt i tre delar som inehåller en formskapare, miniräknare och sten, sax, påse-spel. Skapat i C# med EntityFramework code first.",
 					Year = "2023",
 					Month = "Jan",
 					GitUrl = "https://github.com/WennFr/KyhProject1FW",
@@ -54,7 +54,7 @@ namespace ProjectInformationAPI.Data
 				new ProjectData
 				{
 					Title = "HotelRoomManager",
-					Description = "Ett administrationssystem för ett fiktivt hotell.CRUDa kunder och rum samt skapa nya bokningar!Utvecklats i C# med ef code first.",
+					Description = "Ett administrationssystem för ett fiktivt hotell. CRUD:a kunder, rum samt skapa nya bokningar! Utvecklat i C# med EntityFramework code first.",
 					Year = "2023",
 					Month = "Jan",
 					GitUrl = "https://github.com/WennFr/HotelRoomManager",
