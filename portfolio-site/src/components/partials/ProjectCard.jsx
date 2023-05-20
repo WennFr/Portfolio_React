@@ -13,7 +13,7 @@ const ProjectCard = ({project}) => {
                     {project.description}
                 </p>
                 <div class="font-sans">
-                    <a href={project.gitUrl} className="btn btn-outline-light">GitHub &nbsp;<span className="fab fa-github"></span></a>
+                    <a href={project.gitUrl} className="btn btn-outline-light" target="_blank">GitHub &nbsp;<span className="fab fa-github"></span></a>
                 </div>
             </div>
         </div>

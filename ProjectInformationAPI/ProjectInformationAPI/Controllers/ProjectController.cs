@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProjectInformationAPI.Data;
@@ -9,6 +10,7 @@ namespace ProjectInformationAPI.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
+	[EnableCors("AllowLocalhost")]
 	public class ProjectController : ControllerBase
 	{
 		private readonly List<ProjectData> _projects;

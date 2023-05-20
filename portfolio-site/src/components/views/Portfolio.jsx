@@ -1,63 +1,40 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import ProjectCard from '../partials/ProjectCard'
 
 
 const Portfolio = () => {
+    const [projects, setProjects] = useState([]);
+
+
+    useEffect(() => {
+        fetchProjects();
+    }, []);
+
+
+    const fetchProjects = async () => {
+        try {
+            const response = await fetch('https://localhost:7117/api/Project');
+            if (response.ok) {
+                const data = await response.json();
+                setProjects(data);
+            } else {
+                throw new Error('Error fetching projects');
+            }
+        } catch (error) {
+            console.error('Error fetching projects:', error);
+        }
+    };
 
     return (
         <>
-            <section id='portfolio' className='portfolio'>
+            <section id="portfolio" className="portfolio">
                 <div className="container timeline">
                     <h2>Portfolio</h2>
-                    <ProjectCard />
-                    <div className="timeline-row">
-                        <div className="timeline-date">
-                            2022<small>Oct</small>
-                        </div>
-                        <div class="timeline-content">
-                        <h3>Projekt</h3>
-                            <p>
-                                Lorem ipsum
-                            </p>
-                            <div className="font-sans">
-                                <a  className="btn btn-outline-light" target="_blank">GitHub &nbsp;<span className="fab fa-github"></span></a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className="timeline-row">
-                        <div className="timeline-date">
-                            2022<small>Oct</small>
-                        </div>
-                        <div className="timeline-content">
-                        <h3>Projekt</h3>
-                            <p>
-                                Lorem ipsum
-                            </p>
-                            <div className="font-sans">
-                                <a  className="btn btn-outline-light" >GitHub &nbsp;<span className="fab fa-github"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="timeline-row">
-                        <div className="timeline-date">
-                            2022<small>Oct</small>
-                        </div>
-                        <div className="timeline-content">
-                        <h3>Projekt</h3>
-                            <p>
-                                Lorem ipsum
-                            </p>
-                            <div className="font-sans">
-                                <a  className="btn btn-outline-light" >GitHub &nbsp;<span className="fab fa-github"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    
+                    {projects.map((project) => (
+                        <ProjectCard key={project.id} project={project} />
+                    ))}
                     <div className="line"></div>
                 </div>
-
             </section>
         </>
     )
