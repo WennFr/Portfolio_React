@@ -5,7 +5,7 @@ const Portfolio = () => {
 
     return (
         <>
-            <section className='portfolio'>
+            <section id='portfolio' className='portfolio'>
                 <div className="container timeline">
                     <h2>Portfolio</h2>
                     <div class="timeline-row">

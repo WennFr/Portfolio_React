@@ -8,7 +8,7 @@ const LandingPage = () => {
 
     return (
         <>
-            <section className='landing-page'>
+            <section id='landing-page' className='landing-page'>
                 <div className='container'>
                     <h1>Frederick Wennborg</h1>
                     <p>.NET student på KYH. </p>

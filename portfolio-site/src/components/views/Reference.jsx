@@ -64,7 +64,7 @@ const Reference = () => {
   
     return (
       <>
-        <section className="reference">
+        <section id='reference' className="reference">
           <div className="cont">{renderCards()}</div>
         </section>
       </>

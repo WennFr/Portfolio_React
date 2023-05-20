@@ -14,20 +14,20 @@ import Footer from '../partials/Footer'
 
 const Home = () => {
 
-    return(
+    return (
         <>
-        <Header />
-        <LandingPage />
-        <About />
-        <CardLine />
-        <Experience />
-        <CardLine />
-        <Portfolio />
-        <CardLine />
-        <Reference />
-        <CardLine />
-        <Contact />
-        <Footer />
+            <Header />
+            <LandingPage id="landing-page" />
+            <About id="about-me" />
+            <CardLine />
+            <Experience id="experience" />
+            <CardLine />
+            <Portfolio id="portfolio" />
+            <CardLine />
+            <Reference id="reference" />
+            <CardLine />
+            <Contact id="contact" />
+            <Footer />
         </>
     )
 
