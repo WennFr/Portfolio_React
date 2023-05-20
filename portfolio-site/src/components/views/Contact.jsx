@@ -15,7 +15,6 @@ const Contact = () => {
 
     return (
         <>
-
             <section className='contact'>
                 <div className='cont'>
                     <div className="content-card">
