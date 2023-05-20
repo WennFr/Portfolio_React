@@ -2,6 +2,7 @@ header {
     font-size: 1.5em;
     box-shadow: 0 0 2px 1px $color-shadow-1;
     position: sticky;
+    background-color: $color-shadow-1;
   
     .cont {
       display: grid;

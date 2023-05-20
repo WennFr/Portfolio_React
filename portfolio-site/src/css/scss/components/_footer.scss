@@ -1,0 +1,49 @@
+footer {
+    margin-top: 5rem;
+    background-color: $color-shadow-1;
+    height: auto;
+
+    .container {
+        @include content-center;
+        justify-content: space-between;
+        max-width: 1200px;
+    }
+
+    p {
+        margin-bottom: -0.0rem  !important;
+    }
+
+
+    .contact-details {
+        padding-top: 1rem;
+
+        .phone {
+        @include content-center;
+            justify-content: left;
+          
+
+            a{
+                margin-left: 0.5rem;
+                text-decoration: none;
+                color: $color-theme;
+            }
+        
+        }
+
+        .mail {
+            margin-top: 2px;
+            @include content-center;
+
+
+            a{
+                margin-left: 1rem;
+                text-decoration: none;
+                color: $color-theme;
+            }
+
+        }
+
+        padding-bottom: 2rem;
+    }
+
+}
