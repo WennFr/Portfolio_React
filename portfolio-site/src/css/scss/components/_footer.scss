@@ -1,5 +1,5 @@
 footer {
-    margin-top: 5rem;
+    margin-top: 7rem;
     background-color: $color-shadow-1;
     height: auto;
 
@@ -10,40 +10,53 @@ footer {
     }
 
     p {
-        margin-bottom: -0.0rem  !important;
+        margin-bottom: -0.0rem !important;
     }
-
 
     .contact-details {
         padding-top: 1rem;
 
         .phone {
-        @include content-center;
+            @include content-center;
             justify-content: left;
-          
 
-            a{
+            a {
                 margin-left: 0.5rem;
                 text-decoration: none;
                 color: $color-theme;
             }
-        
         }
 
         .mail {
             margin-top: 2px;
             @include content-center;
 
-
-            a{
+            a {
                 margin-left: 1rem;
                 text-decoration: none;
                 color: $color-theme;
             }
-
         }
 
         padding-bottom: 2rem;
     }
+
+    .links {
+        @include content-center;
+        gap: 1rem;
+        font-size: 3rem;
+
+        .media-link {
+            color: $color-light-1;
+            transition: background-color 0.25s, color 0.22s;
+
+        }
+        .media-link:hover{
+            color: $color-theme;
+        }
+
+    }
+
+
 
 }

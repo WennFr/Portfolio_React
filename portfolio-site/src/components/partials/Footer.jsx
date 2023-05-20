@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className="contact-details">
                         <div class="contact-header">
                             <p>Mina Uppgifter:</p>
-                            <hr className="" />
+                            <hr />
                         </div>
                         <div className="phone">
                             <p>Telefon: </p>
@@ -25,16 +25,22 @@ const Footer = () => {
                     </div>
                     <div>
                         <div className="links">
-                            <div>
-                                <a href="" target="_blank">
-                                    <i className="fab fa-linkedin text-gray-800 dark:text-blueGray-300 dark:hover:text-turquoise hover:text-turquoise"></i>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="" target="_blank">
-                                    <i className="fab fa-github-square text-gray-800 dark:text-blueGray-300 dark:hover:text-turquoise hover:text-turquoise"></i>
-                                </a>
-                            </div>
+                            <NavLink
+                                to="https://www.linkedin.com/in/frederick-wennborg-055624261/"
+                                className="media-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="fab fa-linkedin"></i>
+                            </NavLink>
+                            <NavLink
+                                to="https://github.com/WennFr?tab=repositories"
+                                className="media-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="fab fa-github-square"></i>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
