@@ -16,9 +16,9 @@ export const getWeatherIcon = (weatherCode) => {
         case 48:
             return <WiFog size={35} color="gray" />;
         case 51:
-            return <WiSprinkle size={35} color="gray" />;
+            return <WiSprinkle size={35} color="blue" />;
         case 53:
-            return <WiRaindrops size={35} color="gray" />;
+            return <WiRaindrops size={35} color="blue" />;
         case 55:
             return <WiShowers size={35} color="blue" />;
         case 56:
@@ -36,13 +36,13 @@ export const getWeatherIcon = (weatherCode) => {
         case 67:
             return <WiRain size={35} color="blue" />;
         case 71:
-            return <WiSnow size={35} color="blue" />;
+            return <WiSnow size={35} color="white" />;
         case 73:
-            return <WiSnowflakeCold size={35} color="blue" />;
+            return <WiSnowflakeCold size={35} color="white" />;
         case 75:
-            return <WiSnowflakeCold size={35} color="blue" />;
+            return <WiSnowflakeCold size={35} color="white" />;
         case 77:
-            return <WiSnowWind size={35} color="blue" />;
+            return <WiSnowWind size={35} color="white" />;
         case 80:
             return <WiRain size={35} color="blue" />;
         case 81:
@@ -50,23 +50,16 @@ export const getWeatherIcon = (weatherCode) => {
         case 82:
             return <WiRainWind size={35} color="blue" />;
         case 85:
-            return <WiSnow size={35} color="blue" />;
+            return <WiSnow size={35} color="white" />;
         case 86:
-            return <WiSnowWind size={35} color="blue" />;
+            return <WiSnowWind size={35} color="white" />;
         case 95:
-            return <WiThunderstorm size={35} color="blue" />;
+            return <WiThunderstorm size={35} color="yellow" />;
         case 96:
-            return <WiDayHail size={35} color="blue" />;
+            return <WiDayHail size={35} color="yellow" />;
         case 99:
-            return <WiHail size={35} color="blue" />;
-
-
-
-
-
-
-        // Add more cases for other weather codes and corresponding icons
+            return <WiHail size={35} color="yellow" />;
         default:
-            return null; // Return null or a default icon if no match is found
+            return null;
     }
 };

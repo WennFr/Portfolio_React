@@ -2,24 +2,29 @@ import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { scrollToSection } from '../../utilities/scrollUtilities';
 import { useWeatherData } from '../../utilities/weatherAPI';
+import { getWeatherIcon } from '../../utilities/weatherIconMapper';
 
 const Header = () => {
   const weatherData = useWeatherData();
 
   const { temperature, weatherCode } = weatherData;
 
+  const weatherIcon = getWeatherIcon(weatherCode);
+
   return (
     <header>
       <div className="cont">
         <div className='weather'>
-        {temperature ? (
+          {temperature ? (
             <>
               Stockholm: {temperature} <span className="temperature">°C</span>
             </>
           ) : (
             'Loading...'
           )}
-        {/* <WiDaySunny size={35} color="white" /> */}
+          <div className='weather-icon'>
+            {weatherIcon}
+          </div>
         </div>
         <nav className="links">
           <NavLink className="link" onClick={() => scrollToSection('about-me')} to="#">
