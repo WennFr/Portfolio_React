@@ -15,8 +15,7 @@
   transition: background-color 0.3s ease;
   text-decoration: none;
   width: 150px;
-  margin: 0 5px;
-
+  
   @include content-center;
 
   i{
@@ -65,4 +64,11 @@
     outline: none;
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3);
   }
+}
+
+
+
+.next-section-btn{
+  color: $color-light-2;
+  font-size: 1.5rem;
 }

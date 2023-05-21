@@ -1,6 +1,7 @@
 import React from 'react'
 import MainImg from '../../assets/images/Facetune_22-04-2023-11-40-23new.jpg'
-
+import { NavLink } from 'react-router-dom';
+import { scrollToSection } from '../../utilities/scrollUtilities';
 
 
 
@@ -16,8 +17,19 @@ const LandingPage = () => {
                         <img className='main-img' src={MainImg} alt="Main Image" />
                     </div>
                     <div className='button-group'>
-                        <a className='button-1'>CV &nbsp;<i className="fa fa-download"></i></a>
-                        <a className='button-2'>Kontakt&nbsp;<i className="fas fa-envelope"></i></a>
+                        <a className='button-1' href={process.env.PUBLIC_URL + '/Frederick_Wennborg_Cv.pdf'} download>CV&nbsp;<i className="fa fa-download"></i></a>
+                        <NavLink className="button-2" onClick={() => scrollToSection('contact')} to="#">
+                            Kontakt&nbsp;<i className="fas fa-envelope"></i>
+                        </NavLink>
+                    </div>
+
+                    <div className="next-section">
+                        <div>
+                            <NavLink className="next-section-btn" onClick={() => scrollToSection('about-me')} to="#">
+                                <i className="fas fa-chevron-down"></i>
+                            </NavLink>
+
+                        </div>
                     </div>
                 </div>
             </section>
