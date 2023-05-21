@@ -1,5 +1,6 @@
 import React from 'react'
 import MainImg from '../../assets/images/Facetune_22-04-2023-11-40-23new.jpg'
+import MainImg2 from '../../assets/images/Facetune_22-04-2023-11-40-23-modified.png'
 import { NavLink } from 'react-router-dom';
 import { scrollToSection } from '../../utilities/scrollUtilities';
 
@@ -14,7 +15,10 @@ const LandingPage = () => {
                     <h1>Frederick Wennborg</h1>
                     <p>.NET student på KYH. </p>
                     <div className='image-container'>
-                        <img className='main-img' src={MainImg} alt="Main Image" />
+                        <img className='main-img-2' src={MainImg2} alt="Main Image" />
+                        {/* <img className='main-img' src={MainImg} alt="Main Image" /> */}
+
+                        
                     </div>
                     <div className='button-group'>
                         <a className='button-1' href={process.env.PUBLIC_URL + '/Frederick_Wennborg_Cv.pdf'} download>CV&nbsp;<i className="fa fa-download"></i></a>
