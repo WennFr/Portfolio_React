@@ -5,10 +5,8 @@ import { useWeatherData } from '../../utilities/weatherAPI';
 import { getWeatherIcon } from '../../utilities/weatherIconMapper';
 
 const Header = () => {
-  const weatherData = useWeatherData();
-
+  const {weatherData, location} = useWeatherData();
   const { temperature, weatherCode } = weatherData;
-
   const weatherIcon = getWeatherIcon(weatherCode);
 
   return (
@@ -17,7 +15,7 @@ const Header = () => {
         <div className='weather'>
           {temperature ? (
             <>
-              Stockholm: {temperature} <span className="temperature">°C</span>
+              {location}: {temperature} <span className="temperature">°C</span>
             </>
           ) : (
             'Loading...'
