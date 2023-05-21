@@ -17,16 +17,10 @@ const LandingPage = () => {
                     </div>
                     <div className='button-group'>
                         <a className='button-1'>CV &nbsp;<i className="fa fa-download"></i></a>
-
                         <a className='button-2'>Kontakt&nbsp;<i className="fas fa-envelope"></i></a>
-                        
                     </div>
                 </div>
-
-
-
             </section>
-
         </>
     )
 

@@ -16,8 +16,18 @@
   text-decoration: none;
   width: 150px;
   margin: 0 5px;
+
+  @include content-center;
+
+  i{
+    margin-bottom: 3px;
+  }
+
   &:hover {
-    background-color: $color-theme
+    background-color: $color-light-1;
+    color: $color-dark-2;
+
+  
   }
 
   &:focus {
@@ -36,10 +46,19 @@
   border-radius: 5px;
   transition: background-color 0.3s ease;
   text-decoration: none;
-  margin: 0 5px;
+  @include content-center;
 
+  i{
+    margin-top: 0.5px;
+  }
+
+  
   &:hover {
-    background-color: #3f4e4f
+    background-color: $color-light-1;
+    color: $color-dark-2;
+    
+   
+  
   }
 
   &:focus {
