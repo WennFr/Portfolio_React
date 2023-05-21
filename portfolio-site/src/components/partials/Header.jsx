@@ -1,30 +1,16 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-
-
-
-
-
+import { scrollToSection } from '../../utilities/scrollUtilities';
 
 
 const Header = () => {
-
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      const offset = window.innerHeight / 3.5; 
-      const sectionTop = section.offsetTop - offset;
-      window.scrollTo({ top: sectionTop, behavior: 'smooth' });
-    }
-  };
-
+  
   return (
     <header>
       <div className="cont">
         <div className='weather'>
           Stockholm: 23<span>C°</span>
         </div>
-
         <nav className="links">
           <NavLink className="link" onClick={() => scrollToSection('about-me')} to="#">
             Om Mig
