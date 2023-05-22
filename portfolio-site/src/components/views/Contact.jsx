@@ -1,14 +1,7 @@
 import React, { useState } from 'react';
-import { useContactForm } from '../../utilities/validateContactForm';
 import { validate, handlePostComment } from '../../utilities/validateContactForm';
 
-
-
 const Contact = () => {
-
-
-
-
 
     return (
         <>

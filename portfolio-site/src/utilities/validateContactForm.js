@@ -1,9 +1,3 @@
-const nodemailer = require('nodemailer');
-const { google } = require('google-auth-library');
-
-
-
-
 
 function validate(event) {
 
@@ -64,12 +58,10 @@ function validateComment(element) {
 
     errorElement.innerHTML = `Måste vara en giltig kommentar.`
     return false
-
   }
 
   errorElement.innerHTML = ``
   return true
-
 }
 
 async function handlePostComment(e) {
@@ -109,7 +101,6 @@ async function handlePostComment(e) {
     }
   }
 
-
   if (!errors.includes(false)) {
 
     const form = {
@@ -118,66 +109,6 @@ async function handlePostComment(e) {
       comments: e.target['comments'].value
 
     }
-
-
-    try {
-        const oauth2Client = new google.auth.OAuth2(
-          'CLIENT_ID',
-          'CLIENT_SECRET',
-          'REDIRECT_URL'
-        );
-  
-        oauth2Client.setCredentials({
-          refresh_token: 'REFRESH_TOKEN',
-        });
-  
-        // Generate an access token using the refresh token
-        const getAccessToken = async () => {
-          try {
-            const { res } = await oauth2Client.refreshAccessToken();
-            return res.data.access_token;
-          } catch (error) {
-            console.error('Error refreshing access token:', error);
-            throw error;
-          }
-        };
-  
-        // Configure Nodemailer transporter with OAuth2 authentication
-        const transporter = nodemailer.createTransport({
-          service: 'Gmail',
-          auth: {
-            type: 'OAuth2',
-            user: 'your-email@gmail.com',
-            clientId: 'CLIENT_ID',
-            clientSecret: 'CLIENT_SECRET',
-            refreshToken: 'REFRESH_TOKEN',
-            accessToken: await getAccessToken(),
-          },
-        });
-  
-        const mailOptions = {
-          from: `${form.email}`,
-          to: 'your-email@gmail.com',
-          subject: `Contact Form Submission: ${form.name}`,
-          text: `${form.comments}`,
-        };
-  
-        // Function to send the email
-        const sendEmail = async (mailOptions) => {
-          try {
-            await transporter.sendMail(mailOptions);
-            console.log('Email sent successfully');
-          } catch (error) {
-            console.error('Error sending email:', error);
-            throw error;
-          }
-        };
-  
-        await sendEmail(mailOptions);
-        // Handle success...
-      } catch (error) {
-        errorMessage.innerHTML = 'Something went wrong. Try again later.';
-      }
-    }
   }
+}
 

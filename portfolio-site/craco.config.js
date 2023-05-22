@@ -1,10 +1,10 @@
-// const urlPolyfill = require.resolve('url-polyfill');
+const urlPolyfill = require.resolve('url-polyfill');
 
-// module.exports = {
-//   webpack: {
-//     configure: (webpackConfig) => {
-//       webpackConfig.resolve.fallback.url = urlPolyfill;
-//       return webpackConfig;
-//     },
-//   },
-// };
+module.exports = {
+  webpack: {
+    configure: (webpackConfig) => {
+      webpackConfig.resolve.fallback.url = urlPolyfill;
+      return webpackConfig;
+    },
+  },
+};
