@@ -1,5 +1,5 @@
 
-function validate(event) {
+export function validate(event) {
 
   switch (event.target.id) {
 
@@ -18,7 +18,7 @@ function validate(event) {
 
 }
 
-function validateName(element) {
+export function validateName(element) {
   const regEx = /^[A-Za-z\u00C0-\u017F]+(?:[-\s][A-Za-z\u00C0-\u017F]+)?(?:[-\s][A-Za-z\u00C0-\u017F]+)?$/;
   const errorElement = document.getElementById(`error-${element.id}`)
 
@@ -34,7 +34,7 @@ function validateName(element) {
 
 }
 
-function validateEmail(element) {
+export function validateEmail(element) {
   const regEx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const errorElement = document.getElementById(`error-${element.id}`)
 
@@ -50,7 +50,7 @@ function validateEmail(element) {
 
 }
 
-function validateComment(element) {
+export function validateComment(element) {
   const regEx = /^(?=.*[A-Za-z])[A-Za-z0-9\såäöÅÄÖ!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]{1,500}$/
   const errorElement = document.getElementById(`error-${element.id}`)
 
@@ -64,7 +64,7 @@ function validateComment(element) {
   return true
 }
 
-async function handlePostComment(e) {
+export async function handlePostComment(e) {
   e.preventDefault()
   const errors = []
   const errorMessage = document.getElementById('errorMessage')
@@ -95,7 +95,6 @@ async function handlePostComment(e) {
           case 'comments':
             errors.push(validateComment(element))
             break;
-
         }
       }
     }
@@ -108,7 +107,8 @@ async function handlePostComment(e) {
       email: e.target['email'].value,
       comments: e.target['comments'].value
 
-    }
+    };
+    console.log('Form submitted:', form);
   }
 }
 

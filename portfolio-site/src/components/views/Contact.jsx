@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { validate, handlePostComment } from '../../utilities/validateContactForm';
+import React from 'react';
+import { validate, handlePostComment,validateName,validateEmail,validateComment } from '../../utilities/validateContactForm';
 
 const Contact = () => {
-
+  
     return (
         <>
             <section id='contact' className='contact'>
@@ -13,33 +13,35 @@ const Contact = () => {
                             <div className="col-12 py-2">
                                 <input
                                     type="text"
-                                    required
                                     className="form-control"
                                     placeholder="Namn"
-                                    onChange={validate}
+                                    required
+                                    id="name"
+                                    onKeyUp={(e) => validateName(e.target)}
                                 />
-                                <div id="error-name" class="error"></div>
+                                <div id="error-name" className="error"></div>
                             </div>
                             <div className="col-12 py-2">
                                 <input
                                     type="email"
-                                    required
                                     className="form-control"
                                     placeholder="Email"
-                                    onChange={validate}
+                                    required
+                                    id="email"
+                                    onKeyUp={(e) => validateEmail(e.target)}
                                 />
-                                <div id="error-email" class="error"></div>
+                                <div id="error-email" className="error"></div>
                             </div>
-
                             <div className="col-12 py-1">
                                 <textarea
                                     name="message"
-                                    required
                                     placeholder="Skriv här!"
                                     className="form-control textar"
-                                    onChange={validate}
+                                    required
+                                    id="comments"
+                                    onKeyUp={(e) => validateComment(e.target)}
                                 ></textarea>
-                                <div id="error-comments" class="error"></div>
+                                <div id="error-comments" className="error"></div>
                             </div>
                             <div className="col-12 py-3">
                                 <div className="g-recaptcha" data-sitekey="6LfR5SMjAAAAAAN-6DjqHeIwS7_ls9eWnZYOOYwN">
@@ -56,7 +58,7 @@ const Contact = () => {
                 </div>
             </section>
         </>
-    )
+    );
+};
 
-}
-export default Contact
+export default Contact;
