@@ -1,24 +1,21 @@
 import React, { useState } from 'react';
+import { useContactForm } from '../../utilities/validateContactForm';
+import { validate, handlePostComment } from '../../utilities/validateContactForm';
+
 
 
 const Contact = () => {
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission here
-        console.log('Form submitted:', { name, email, message });
-    };
+
+
 
     return (
         <>
             <section id='contact' className='contact'>
                 <div className='cont'>
                     <div className="content-card">
-                        <form onSubmit={handleSubmit}>
+                        <form onSubmit={handlePostComment} noValidate>
                             <h2>Kontakt</h2>
                             <div className="col-12 py-2">
                                 <input
@@ -26,9 +23,9 @@ const Contact = () => {
                                     required
                                     className="form-control"
                                     placeholder="Namn"
-                                    value={name}
-                                    onChange={(e) => setName(e.target.value)}
+                                    onChange={validate}
                                 />
+                                <div id="error-name" class="error"></div>
                             </div>
                             <div className="col-12 py-2">
                                 <input
@@ -36,19 +33,20 @@ const Contact = () => {
                                     required
                                     className="form-control"
                                     placeholder="Email"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
+                                    onChange={validate}
                                 />
+                                <div id="error-email" class="error"></div>
                             </div>
+
                             <div className="col-12 py-1">
                                 <textarea
                                     name="message"
                                     required
                                     placeholder="Skriv här!"
                                     className="form-control textar"
-                                    value={message}
-                                    onChange={(e) => setMessage(e.target.value)}
+                                    onChange={validate}
                                 ></textarea>
+                                <div id="error-comments" class="error"></div>
                             </div>
                             <div className="col-12 py-3">
                                 <div className="g-recaptcha" data-sitekey="6LfR5SMjAAAAAAN-6DjqHeIwS7_ls9eWnZYOOYwN">
