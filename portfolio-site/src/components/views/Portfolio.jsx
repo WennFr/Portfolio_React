@@ -13,7 +13,7 @@ const Portfolio = () => {
 
     const fetchProjects = async () => {
         try {
-            const response = await fetch('https://localhost:7117/api/Project');
+            const response = await fetch('https://projectinformationapi20230523115001.azurewebsites.net/api/project');
             if (response.ok) {
                 const data = await response.json();
                 setProjects(data);

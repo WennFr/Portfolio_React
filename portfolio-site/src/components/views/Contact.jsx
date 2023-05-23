@@ -4,7 +4,7 @@ import { validate, handlePostComment,validateName,validateEmail,validateComment 
 const Contact = () => {
   
     return (
-        <>
+        <>  
             <section id='contact' className='contact'>
                 <div className='cont'>
                     <div className="content-card">
@@ -41,7 +41,7 @@ const Contact = () => {
                                     id="comments"
                                     onKeyUp={(e) => validateComment(e.target)}
                                 ></textarea>
-                                <div id="error-comments" className="error"></div>
+                                <div id="error-comments" className="error"></div>   
                             </div>
                             <div className="col-12 py-3">
                                 <div className="g-recaptcha" data-sitekey="6LfR5SMjAAAAAAN-6DjqHeIwS7_ls9eWnZYOOYwN">

@@ -70,8 +70,6 @@ export async function handlePostComment(e) {
   const errorMessage = document.getElementById('errorMessage')
   const confirmMessage = document.getElementById('confirmMessage')
 
-  errorMessage.innerHTML = ''
-  confirmMessage.innerHTML = ''
 
   for (let element of e.target) {
 
@@ -109,6 +107,17 @@ export async function handlePostComment(e) {
 
     };
     console.log('Form submitted:', form);
+
+    const mailtoLink = `mailto:frederick.wennborgh@gmail.com?subject=Contact Form Submission:${form.name} &body=${encodeURIComponent(
+      `Name: ${form.name}%0D%0AEmail: ${form.email}%0D%0AComments: ${form.comments}`
+    )}`;
+
+    window.location.href = mailtoLink;
   }
+
+
+
+
+
 }
 
