@@ -1,6 +1,4 @@
 .portfolio {
-
-
     .timeline {
         position: relative;
         border-radius: 4px;
@@ -8,9 +6,7 @@
         padding-right: 5rem;
         overflow: hidden;
         height: auto !important;
-
     }
-
     .timeline .line {
         position: absolute;
         top: 0;
@@ -20,15 +16,11 @@
         height: 100%;
     }
 
-
-
-
     .timeline-row {
         padding-left: 50%;
         position: relative;
         margin-bottom: 30px;
     }
-
     .timeline-row .timeline-date {
         position: absolute;
         right: 50%;
@@ -43,7 +35,6 @@
         display: block;
         font-size: 0.8rem;
     }
-
     .timeline-row .timeline-content {
         position: relative;
         padding: 20px 30px;
@@ -61,7 +52,6 @@
         }
 
     }
-
     .timeline-row .timeline-content:after {
         content: "";
         position: absolute;
