@@ -10,7 +10,7 @@ const Header = () => {
   const weatherIcon = getWeatherIcon(weatherCode);
 
   return (
-    <header>
+    <header >
       <div className="cont">
         <div className='weather'>
           {temperature ? (

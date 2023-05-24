@@ -1,93 +1,90 @@
 .reference {
- 
-  
-    .cont {
-      display: grid;
-      justify-content: center;
-      align-items: center;
+
+  .cont {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-card {
+
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: transform 0.0s ease, opacity 0.0s ease;
+
+    &:hover {
+      transform: translate(-50%, -37%) scale(1.0);
     }
-  
-    .content-card {
-  
 
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transition: transform 0.0s ease, opacity 0.0s ease;
-  
-      &:hover {
-        transform: translate(-50%, -37%) scale(1.0);
+    &.active {
+      background-color: $color-dark-2;
+      border-radius: 40px;
+      height: auto;
+      width: 600px;
+      border: thin solid $color-theme;
+      box-shadow: 0 0 3px 1px $color-dark-2;
+      z-index: 998;
+      opacity: 1;
+      transform: translateY(0);
+      cursor: pointer;
+    }
+
+    .body {
+      color: $color-light-2;
+
+
+
+      .progress-bar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
       }
-  
-      &.active {
-        background-color: $color-dark-2;
-        border-radius: 40px;
-        height: auto;
-        width: 600px;
-        border: thin solid $color-theme;
-        box-shadow: 0 0 3px 1px $color-dark-2;
-        z-index: 999;
-        opacity: 1;
-        transform: translateY(0);
-        cursor: pointer;
+
+      .progress-bar {
+        width: 20px;
+        height: 5px;
+        background-color: #ccc;
+        margin: 0 2px;
       }
-  
-      .body {
+
+      .progress-bar.active {
+        background-color: $color-theme;
+      }
+
+      h2 {
         color: $color-light-2;
-  
+        font-weight: 400;
+        font-size: 2em;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 1rem;
+      }
 
+      h3 {
+        color: $color-light-2;
+        font-weight: 400;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 1rem;
+      }
 
-        .progress-bar-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 1rem;
-            padding-bottom: 1rem;
-          }
-          
-          .progress-bar {
-            width: 20px;
-            height: 5px;
-            background-color: #ccc;
-            margin: 0 2px;
-          }
-          
-          .progress-bar.active {
-            background-color: $color-theme;
-          }
+      .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
 
-        h2 {
-          color: $color-light-2;
+        p {
+          padding-top: 0.625rem;
+          padding-bottom: 1.25rem;
+          font-size: 1em;
+          width: 75vh;
           font-weight: 400;
-          font-size: 2em;
-          margin-bottom: 20px;
-          text-align: center;
-          margin-top: 1rem;
-        }
-  
-        h3 {
-          color: $color-light-2;
-          font-weight: 400;
-          margin-bottom: 20px;
-          text-align: center;
-          margin-top: 1rem;
-        }
-  
-        .text {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-  
-          p {
-            padding-top: 0.625rem;
-            padding-bottom: 1.25rem;
-            font-size: 1em;
-            width: 75vh;
-            font-weight: 400;
-          }
         }
       }
     }
   }
-  
+}
