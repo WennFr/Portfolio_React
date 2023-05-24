@@ -5,9 +5,25 @@ import { useWeatherData } from '../../utilities/weatherAPI';
 import { getWeatherIcon } from '../../utilities/weatherIconMapper';
 
 const Header = () => {
-  const {weatherData, location} = useWeatherData();
+  const { weatherData, location } = useWeatherData();
   const { temperature, weatherCode } = weatherData;
   const weatherIcon = getWeatherIcon(weatherCode);
+
+
+  function myFunction() {
+    var x = document.getElementById("links");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
+
+  useEffect(() => {
+  }, []);
+
+
 
   return (
     <header >
@@ -15,7 +31,7 @@ const Header = () => {
         <div className='weather'>
           {temperature ? (
             <>
-              {location}: {temperature} <span className="temperature">°C</span>
+             <span className='hide'> {location}: &nbsp; </span>  {temperature} <span className="temperature">°C</span>
             </>
           ) : (
             'Loading...'
@@ -24,7 +40,8 @@ const Header = () => {
             {weatherIcon}
           </div>
         </div>
-        <nav className="links">
+
+        <nav id="links" className="links">
           <NavLink className="link" onClick={() => scrollToSection('about-me')} to="#">
             Om Mig
           </NavLink>
@@ -41,7 +58,9 @@ const Header = () => {
             <span>Kontakt</span>
           </NavLink>
         </nav>
-
+        <div id="toggle-icon" className="toggle-button">
+          <button onClick={myFunction}><i className="fa fa-bars"></i></button>
+        </div>
       </div>
     </header>
   )

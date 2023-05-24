@@ -1,22 +1,30 @@
+$breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
 $breakpoint-xxxl: 1920px;
 
+$minmaxwidth-sm: 576px;
 $minmaxwidth-md: 720px;
 $minmaxwidth-lg: 960px;
 $minmaxwidth-xl: 1140px;
 $minmaxwidth-xxl: 1320px;
 $minmaxwidth-xxxl: 1680px;
 
+
+@mixin sm {
+    @media (min-width: $minmaxwidth-sm) {
+        @content
+    }
+}
 @mixin md {
-    @media (min-width: $minmaxwidth-md) {
+    @media (max-width: $minmaxwidth-md) {
         @content
     }
 }
 @mixin lg {
-    @media (min-width: $minmaxwidth-lg) {
+    @media (max-width: $minmaxwidth-lg) {
         @content
     }
 }
