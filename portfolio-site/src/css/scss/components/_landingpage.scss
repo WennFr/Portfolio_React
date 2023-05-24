@@ -7,13 +7,10 @@
         font-weight: 400;
         font-size: 3em;
         margin-bottom: 20px;
-
     }
-
     p {
         margin-bottom: 20px;
         font-size: 1em;
-
     }
 
     .image-container {
@@ -35,20 +32,51 @@
 
         }
     }
-
-
     .button-group {
         margin-top: 50px;
         display: flex;
         justify-content: center;
         gap: 5px;
-
-
     }
-
     .next-section {
         margin-top: 1.5rem;
 
     }
+}
+
+
+@include sm {
+    .landing-page {
+      
+        h1 {
+        font-size: 2.5em;
+           
+        }
+        p {
+           
+        }
+    
+        .image-container {
+        
+    
+            .main-img-2 {
+                width: 80%;
+                height: auto;
+    
+            }
+        }
+        .button-group {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+        .next-section {
+            margin-top: 12rem;
+    
+        }
+    }
+
+
 
 }

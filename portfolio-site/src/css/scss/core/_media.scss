@@ -13,17 +13,13 @@ $minmaxwidth-xxl: 1320px;
 $minmaxwidth-xxxl: 1680px;
 
 
+
 @mixin sm {
-    @media (min-width: $minmaxwidth-sm) {
-        @content
-    }
-}
-@mixin md {
     @media (max-width: $minmaxwidth-md) {
         @content
     }
 }
-@mixin lg {
+@mixin md {
     @media (max-width: $minmaxwidth-lg) {
         @content
     }
