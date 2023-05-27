@@ -3,9 +3,9 @@
     text-align: center;
     height: 100vh;
 
-    .container{
+    .container {
         display: grid;
-         place-items: center;
+        place-items: center;
     }
 
     h1 {
@@ -47,13 +47,17 @@
 
 @include xs {
     .landing-page {
+        margin-top: 0.5rem;
         margin-top: 1em;
+
         h1 {
             font-size: 1.5em;
         }
+
         .button-group {
             margin-top: 20px;
         }
+
         .image-container {
             width: 60%;
         }
@@ -64,17 +68,21 @@
 
 @include sm {
     .landing-page {
+        margin-top: 0.5rem;
 
         h1 {
 
             font-size: 2em;
         }
+
         .image-container {
             width: 60%;
         }
+
         .button-group {
             margin-top: 50px;
         }
+
         .next-section {
             margin-top: 1rem;
         }
@@ -87,12 +95,14 @@
         h1 {}
 
         .image-container {
-        width: 60%;
+            width: 60%;
 
         }
+
         .button-group {
             margin-top: 50px;
         }
+
         .next-section {
             margin-top: 1rem;
         }
@@ -105,12 +115,14 @@
         h1 {}
 
         .image-container {
-        width: 30%;
+            width: 30%;
 
         }
+
         .button-group {
             margin-top: 50px;
         }
+
         .next-section {
             margin-top: 1rem;
         }

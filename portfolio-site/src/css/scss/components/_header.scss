@@ -64,7 +64,6 @@ header {
   }
 }
 
-@include xs {}
 
 @media (max-width: $breakpoint-md) {
 
@@ -92,10 +91,11 @@ header {
 
       .links {
         padding-top: 2rem;
-        display: none;
         margin-left: 0rem;
         @include content-center;
         justify-self: center;
+        display: none;
+
 
         .link {
         }
