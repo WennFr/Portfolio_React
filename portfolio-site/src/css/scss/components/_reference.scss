@@ -14,7 +14,7 @@
     transition: transform 0.0s ease, opacity 0.0s ease;
 
     &:hover {
-      transform: translate(-50%, -37%) scale(1.0);
+      transform: translate(-50%, -37%);
     }
 
     &.active {
@@ -26,14 +26,12 @@
       box-shadow: 0 0 3px 1px $color-dark-2;
       z-index: 998;
       opacity: 1;
-      transform: translateY(0);
+      transform: translateY(0) scale(1.0);
       cursor: pointer;
     }
 
     .body {
       color: $color-light-2;
-
-
 
       .progress-bar-container {
         display: flex;
@@ -94,9 +92,8 @@
   .reference {
 
     .content-card {
-      
+
       &:hover {
-        transform: translate(-50%, -37%) scale(1.0);
       }
   
       &.active {

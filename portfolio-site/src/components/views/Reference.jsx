@@ -4,17 +4,17 @@ import { useSwipeable } from 'react-swipeable';
 
 const references = [
     {
-        name: 'Emma Björner',
-        quote: '"Frederick är en seriös och motiverad arbetare."',
+        name: 'Referens 1',
+        quote: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
     },
     {
-        name: 'Thomas A',
-        quote: '"Alltid glad och hjälpsam"',
+        name: 'Referens 2',
+        quote: '"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."',
     },
 
     {
         name: 'Referens 3',
-        quote: '"Suverän!"',
+        quote: '"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     },
 
     
@@ -72,61 +72,3 @@ const Reference = () => {
   };
   
   export default Reference;
-
-
-
-
-
-
-
-
-
-
-
-
-// const Reference = () => {
-//     const [currentIndex, setCurrentIndex] = useState(1);
-
-//     const handleClick = () => {
-//       setCurrentIndex((prevIndex) => (prevIndex + 1) % references.length);
-//     };
-
-//     const referenceStyle = {
-//         transform: `translateX(${(currentIndex === 0 ? -50 : 0)}%)`,
-//         zIndex: references.length - currentIndex,
-//       };
-      
-
-//       return (
-//         <>
-//           <section className='reference'>
-//             <div className='cont'>
-//               {references.map((reference, index) => (
-//                 <div
-//                   key={index}
-//                   className='content-card'
-//                   style={index === currentIndex ? referenceStyle : null}
-//                   onClick={handleClick}
-//                 >
-//                   <div className='body'>
-//                     <h2>Referenser</h2>
-//                     <h3>{reference.name}</h3>
-//                     <div className='text'>
-//                       <p>{reference.quote}</p>
-//                     </div>
-//                   </div>
-//                 </div>
-//               ))}
-//             </div>
-//           </section>
-//         </>
-//       );
-//     };
-
-//     export default Reference;
-
-
-
-
-
-
