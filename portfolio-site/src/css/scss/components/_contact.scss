@@ -37,7 +37,7 @@
                 resize: none;
             }
 
-            .error{
+            .error {
                 margin-top: 10px;
                 color: red;
             }
@@ -45,4 +45,14 @@
 
     }
 
+}
+
+@include sm {
+    .contact {
+    
+        .content-card {
+            width: 370px;
+        }
+
+    }
 }

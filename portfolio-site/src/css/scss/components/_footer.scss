@@ -60,3 +60,26 @@ footer {
 
 
 }
+
+
+@include sm {
+
+    footer {
+
+        .container {
+           display: grid;
+           align-items: center;
+           justify-content: center;
+           text-align: center;
+           
+        }
+
+
+        .contact-details {
+            padding-bottom: 0rem;
+
+        }
+
+    }
+  
+}
