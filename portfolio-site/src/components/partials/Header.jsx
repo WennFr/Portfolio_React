@@ -15,7 +15,7 @@ const Header = () => {
       links.style.display = "grid";
     }
     else {
-      x.style.display = "none";
+      links.style.display = "none";
     }
   }
 
@@ -32,7 +32,7 @@ const Header = () => {
   }
   
   window.addEventListener("resize", restoreLinksDisplay);
-  
+
   useEffect(() => {
   }, []);
 
