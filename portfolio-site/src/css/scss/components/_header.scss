@@ -90,12 +90,14 @@ header {
       }
 
       .links {
-        padding-top: 2rem;
-        margin-left: 0rem;
-        @include content-center;
-        justify-self: center;
+        grid-area: links;
+        margin-top: 1rem;
+        display: grid;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-left: 0px;
         display: none;
-
+        
 
         .link {
         }

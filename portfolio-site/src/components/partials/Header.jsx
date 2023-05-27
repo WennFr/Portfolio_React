@@ -9,22 +9,32 @@ const Header = () => {
   const { temperature, weatherCode } = weatherData;
   const weatherIcon = getWeatherIcon(weatherCode);
 
-
-  function myFunction() {
-    var x = document.getElementById("links");
-    if (x.style.display === "block") {
+  function headerToggle() {
+    var links = document.getElementById("links");
+    if (links.style.display === "none") {
+      links.style.display = "grid";
+    }
+    else {
       x.style.display = "none";
-    } else {
-      x.style.display = "block";
     }
   }
 
-
-
+  function restoreLinksDisplay() {
+    var links = document.getElementById("links");
+    var screenWidth = window.innerWidth;
+  
+    if (screenWidth > 840) {
+      links.style.display = "flex";
+    }
+    if (screenWidth < 840) {
+      links.style.display = "none";
+    }
+  }
+  
+  window.addEventListener("resize", restoreLinksDisplay);
+  
   useEffect(() => {
   }, []);
-
-
 
   return (
     <header >
@@ -32,7 +42,7 @@ const Header = () => {
         <div className='weather'>
           {temperature ? (
             <>
-             <span className='hide'> {location}: &nbsp; </span>  {temperature} <span className="temperature">°C</span>
+              <span className='hide'> {location}: &nbsp; </span>  {temperature} <span className="temperature">°C</span>
             </>
           ) : (
             'Loading...'
@@ -60,7 +70,7 @@ const Header = () => {
           </NavLink>
         </nav>
         <div id="toggle-icon" className="toggle-button">
-          <button onClick={myFunction}><i className="fa fa-bars"></i></button>
+          <button onClick={headerToggle}><i className="fa fa-bars"></i></button>
         </div>
       </div>
     </header>
