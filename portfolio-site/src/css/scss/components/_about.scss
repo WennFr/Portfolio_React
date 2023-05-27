@@ -12,20 +12,22 @@
         background-color: $color-dark-2;
         border-radius: 40px;
         height: auto;
-        width: 1200px;
+        width: 1000px;
         border: thin solid $color-theme;
         box-shadow: 0 0 3px 1px $color-dark-2;
 
         transition: transform 0.5s ease; 
 
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1.01);
          
         }
 
         .body {
             color: $color-light-2;
 
+
+            
             h2 {
                 color: $color-light-2;
                 font-weight: 400;
@@ -41,7 +43,7 @@
                 p {
                     padding-top: 0.625rem;
                     padding-bottom: 1.25rem;
-                    font-size: 1em;
+                    font-size: 1.2em;
                     width: 75vh;
                     font-weight: 400;
                 }
@@ -49,4 +51,35 @@
         }
     }
 
+}
+
+@include sm {
+    .about-me {
+        .cont {
+            
+        }
+        .content-card {
+        width: 90%;
+          
+            &:hover {
+             
+            }
+    
+            .body {
+    
+                h2 {
+               
+                }
+    
+                .text {
+                    text-align: center;
+    
+                    p {
+                        font-size: 0.9em;
+                 
+                    }
+                }
+            }
+        }
+    }
 }

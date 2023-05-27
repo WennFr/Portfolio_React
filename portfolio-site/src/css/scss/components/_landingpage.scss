@@ -1,6 +1,12 @@
 .landing-page {
     margin-top: 3.125rem;
     text-align: center;
+    height: 100vh;
+
+    .container{
+        display: grid;
+         place-items: center;
+    }
 
     h1 {
         color: $color-light-2;
@@ -8,36 +14,30 @@
         font-size: 3em;
         margin-bottom: 20px;
     }
+
     p {
         margin-bottom: 20px;
         font-size: 1em;
     }
 
     .image-container {
-        display: flex;
-        justify-content: center;
         @include content-center;
-
-        .main-img {
-            width: 32%;
-            height: auto;
-            border-radius: 11%;
-            box-shadow: 0 0 10px 1px $color-dark-2;
-
-        }
+        width: 40%;
 
         .main-img-2 {
-            width: 40%;
+            object-fit: cover;
+            width: 100%;
             height: auto;
-
         }
     }
+
     .button-group {
         margin-top: 50px;
         display: flex;
         justify-content: center;
         gap: 5px;
     }
+
     .next-section {
         margin-top: 1.5rem;
 
@@ -45,38 +45,74 @@
 }
 
 
-@include sm {
+@include xs {
     .landing-page {
-      
+        margin-top: 1em;
         h1 {
-        font-size: 2.5em;
-           
-        }
-        p {
-           
-        }
-    
-        .image-container {
-        
-    
-            .main-img-2 {
-                width: 80%;
-                height: auto;
-    
-            }
+            font-size: 1.5em;
         }
         .button-group {
-            margin-top: 50px;
-            display: flex;
-            justify-content: center;
-            gap: 5px;
+            margin-top: 20px;
         }
-        .next-section {
-            margin-top: 12rem;
-    
+        .image-container {
+            width: 60%;
         }
     }
 
 
+}
 
+@include sm {
+    .landing-page {
+
+        h1 {
+
+            font-size: 2em;
+        }
+        .image-container {
+            width: 60%;
+        }
+        .button-group {
+            margin-top: 50px;
+        }
+        .next-section {
+            margin-top: 1rem;
+        }
+    }
+}
+
+@include md {
+
+    .landing-page {
+        h1 {}
+
+        .image-container {
+        width: 60%;
+
+        }
+        .button-group {
+            margin-top: 50px;
+        }
+        .next-section {
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media (min-width:992px) and (max-width: 1900px) {
+
+    .landing-page {
+        h1 {}
+
+        .image-container {
+        width: 30%;
+
+        }
+        .button-group {
+            margin-top: 50px;
+        }
+        .next-section {
+            margin-top: 1rem;
+        }
+    }
 }

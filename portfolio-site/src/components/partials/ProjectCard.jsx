@@ -5,7 +5,7 @@ const ProjectCard = ({project}) => {
         <div class="timeline-row" key={project.id}>
             <div className="timeline-date">
                 {project.year}
-                <small>{project.month}</small>
+                <p className='month'>{project.month}</p>
             </div>
             <div class="timeline-content">
                 <h3>{project.title}</h3>

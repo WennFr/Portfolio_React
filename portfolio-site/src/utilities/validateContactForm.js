@@ -108,7 +108,7 @@ export async function handlePostComment(e) {
     };
     console.log('Form submitted:', form);
 
-    const mailtoLink = `mailto:frederick.wennborgh@gmail.com?subject=Contact Form Submission:${form.name} &body=${encodeURIComponent(
+    const mailtoLink = `mailto:frederick.wennborg@gmail.com?subject=Contact Form Submission:${form.name} &body=${encodeURIComponent(
       `Name: ${form.name}%0D%0AEmail: ${form.email}%0D%0AComments: ${form.comments}`
     )}`;
 

@@ -1,9 +1,8 @@
 .experience {
-
     .cont {
         @include content-center;
         border-radius: 10px;
-       
+
     }
 
     .content-card {
@@ -11,20 +10,19 @@
         background-color: $color-dark-2;
         border-radius: 40px;
         height: auto;
-        width: 1200px;
+        width: 1000px;
         border: thin solid $color-theme;
         box-shadow: 0 0 3px 1px $color-dark-2;
 
-        transition: transform 0.5s ease; 
+        transition: transform 0.5s ease;
         backface-visibility: hidden;
 
         &:hover {
-            transform: scale(1.05);
-         
+            transform: scale(1.01);
+
         }
 
-
-        .body{
+        .body {
             color: $color-light-2;
 
             h2 {
@@ -40,9 +38,9 @@
                 padding-top: 1rem;
                 text-align: center;
                 @include content-center;
-                display: flex; // Use flexbox layout
-                flex-wrap: wrap; // Allow icons to wrap to the next row
-        
+                display: flex;
+                flex-wrap: wrap;
+
                 .icon {
                     color: $color-light-2;
                     padding-top: 0.625rem;
@@ -51,12 +49,38 @@
                     width: 75vh;
                     font-weight: 400;
                     flex-basis: 33.33%;
-                    
+
                 }
+
                 padding-bottom: 1rem;
 
             }
-            
+
         }
+    }
+}
+
+@include sm {
+    .experience {
+        .cont {}
+
+        .content-card {
+
+            width: 90%;
+
+            &:hover {}
+
+
+            .body {
+
+                h2 {}
+
+                .text {
+                    .icon {}
+                }
+
+            }
+        }
+
     }
 }

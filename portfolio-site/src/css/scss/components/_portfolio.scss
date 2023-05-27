@@ -29,9 +29,8 @@
         margin-right: 20px;
         color: $color-light-2;
         font-size: 1.5rem;
-        
 
-        small {
+        .month {
           display: block;
           font-size: 0.8rem;
         }
@@ -54,17 +53,6 @@
         }
       }
 
-      //Pointer
-      .timeline-content:after {
-        content: "";
-        position: absolute;
-        height: 16px;
-        width: 16px;
-        background: $color-dark-2;
-        transform: rotate(-135deg);
-
-      }
-
 
       //Squares
       .timeline-content:before {
@@ -78,24 +66,22 @@
         border: 2px dashed $color-theme;
       }
 
+      //Pointer
+      .timeline-content:after {
+        content: "";
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        background: $color-dark-2;
+        transform: rotate(-135deg);
+
+      }
+
+
+
       p {
         margin-bottom: 30px;
         line-height: 150%;
-      }
-    }
-
-    .timeline-row:nth-child(even) {
-      .timeline-content {
-        margin-left: 40px;
-        text-align: left;
-
-        &:after {
-          left: -8px;
-        }
-
-        &:before {
-          left: -52px;
-        }
       }
     }
 
@@ -122,5 +108,101 @@
         }
       }
     }
+
+    .timeline-row:nth-child(even) {
+      .timeline-content {
+        margin-left: 40px;
+        text-align: left;
+
+        &:after {
+          left: -8px;
+        }
+
+        &:before {
+          left: -52px;
+        }
+      }
+    }
   }
+}
+
+
+@media (max-width: 768px) {
+
+  .portfolio {
+    .timeline {
+      h2 {
+        margin-top: 1rem;
+      }
+
+      .line {
+        z-index: 997;
+      }
+
+      .timeline-row {
+        z-index: 998;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+
+        .timeline-date {
+          position: relative;
+          right: auto;
+          left: auto;
+          text-align: center;
+          margin-right: 0;
+          margin-left: 0;
+        }
+
+        .timeline-content {
+          margin-right: 0;
+          margin-left: 0;
+          width: 350px;          
+
+
+
+        }
+
+        .timeline-content:before,
+        .timeline-content:after {
+          display: none;
+        }
+      }
+
+
+      .timeline-row:nth-child(odd) {
+
+        padding-right: 0%;
+
+        .timeline-content {
+          margin-right: 0px;
+
+        }
+
+        .timeline-date {
+          left: 25%;
+          text-align: center;
+          margin-right: 16rem;
+          margin-left: 0px;
+        }
+
+
+      }
+
+      .timeline-row:nth-child(even) {
+
+        .timeline-date {
+          left: 25%;
+        }
+
+        .timeline-content {
+          margin-left: 0px;
+        }
+
+      }
+
+    }
+  }
+
 }

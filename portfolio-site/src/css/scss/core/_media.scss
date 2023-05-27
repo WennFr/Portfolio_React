@@ -1,41 +1,60 @@
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
-$breakpoint-xxl: 1400px;
-$breakpoint-xxxl: 1920px;
 
-$minmaxwidth-sm: 576px;
-$minmaxwidth-md: 720px;
-$minmaxwidth-lg: 960px;
-$minmaxwidth-xl: 1140px;
-$minmaxwidth-xxl: 1320px;
-$minmaxwidth-xxxl: 1680px;
+$breakpoint-xs: 350px;      // Recommended for small mobile devices
+$breakpoint-sm: 450px;      // Recommended for small mobile devices
+$breakpoint-md: 840px;      // Recommended for most mobile devices and small tablets
+$breakpoint-lg: 992px;      // Recommended for larger tablets and small laptops
+$breakpoint-xl: 1200px;     // Recommended for laptops and desktops
+$breakpoint-xxl: 1400px;    // Recommended for large desktop screens
+$breakpoint-xxxl: 1920px;   // Recommended for extra-large desktop screens
 
 
+$minmaxwidth-xs: $breakpoint-xs;
+$minmaxwidth-sm: $breakpoint-sm;
+$minmaxwidth-md: $breakpoint-md;
+$minmaxwidth-lg: $breakpoint-lg;
+$minmaxwidth-xl: $breakpoint-xl;
+$minmaxwidth-xxl: $breakpoint-xxl;
+$minmaxwidth-xxxl: $breakpoint-xxxl;
+
+
+@mixin xs {
+    @media (min-width:320px) and (max-width: 370px) {
+      @content
+    }
+  }
 
 @mixin sm {
-    @media (max-width: $minmaxwidth-md) {
-        @content
-    }
+  @media (min-width:370px) and (max-width: 450px) {
+    @content
+  }
 }
+
 @mixin md {
-    @media (max-width: $minmaxwidth-lg) {
-        @content
-    }
+  @media (min-width:450px) and (max-width: 992px) {
+    @content
+  }
 }
+
+@mixin lg {
+  @media (min-width:840px) and (max-width: 992px) {
+    @content
+  }
+}
+
 @mixin xl {
-    @media (min-width: $minmaxwidth-xl) {
-        @content
-    }
+  @media (min-width:992px) and (max-width: 1200px) {
+    @content
+  }
 }
+
 @mixin xxl {
-    @media (min-width: $minmaxwidth-xxl) {
-        @content
-    }
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    @content
+  }
 }
+
 @mixin xxxl {
-    @media (min-width: $minmaxwidth-xxxl) {
-        @content
-    }
+  @media (min-width:1400px) and (max-width: 1920px) {
+    @content
+  }
 }

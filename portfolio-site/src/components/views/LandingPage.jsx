@@ -16,9 +16,6 @@ const LandingPage = () => {
                     <p>.NET student på KYH. </p>
                     <div className='image-container'>
                         <img className='main-img-2' src={MainImg2} alt="Main Image" />
-                        {/* <img className='main-img' src={MainImg} alt="Main Image" /> */}
-
-                        
                     </div>
                     <div className='button-group'>
                         <a className='button-1' href={process.env.PUBLIC_URL + '/Frederick_Wennborg_Cv.pdf'} download>CV&nbsp;<i className="fa fa-download"></i></a>

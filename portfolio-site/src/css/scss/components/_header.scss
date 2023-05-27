@@ -64,7 +64,14 @@ header {
   }
 }
 
-@include md {
+@include xs{
+
+}
+
+
+
+
+@media (max-width: $breakpoint-md) {
 
   header {
     .cont {
@@ -80,23 +87,21 @@ header {
       }
 
       .weather {
-        span {
-          // Styles for weather span
-        }
-
+        
         .hide{
           display: none;
         }
 
         .weather-icon {
-          // Styles for weather icon
         }
       }
 
       .links {
+        padding-top: 2rem;
         display: none;
         margin-left: 0rem;
-
+        @include content-center;
+        justify-self: center;
 
         .link {
           // Styles for links
