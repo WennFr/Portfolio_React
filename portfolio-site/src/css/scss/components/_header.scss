@@ -64,12 +64,7 @@ header {
   }
 }
 
-@include xs{
-
-}
-
-
-
+@include xs {}
 
 @media (max-width: $breakpoint-md) {
 
@@ -87,13 +82,12 @@ header {
       }
 
       .weather {
-        
-        .hide{
+
+        .hide {
           display: none;
         }
 
-        .weather-icon {
-        }
+        .weather-icon {}
       }
 
       .links {
@@ -104,7 +98,6 @@ header {
         justify-self: center;
 
         .link {
-          // Styles for links
         }
       }
     }

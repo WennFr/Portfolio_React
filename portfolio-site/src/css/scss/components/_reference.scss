@@ -88,3 +88,33 @@
     }
   }
 }
+
+@include sm {
+
+  .reference {
+
+    .content-card {
+
+
+      &:hover {
+        transform: translate(-50%, -37%) scale(1.0);
+      }
+  
+      &.active {
+       
+        width: 350px;
+        height: 270px;
+      
+      }
+
+
+    }
+
+
+  }
+
+
+
+
+
+}
