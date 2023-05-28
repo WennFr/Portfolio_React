@@ -93,12 +93,28 @@
 
     .content-card {
 
-      &:hover {
-      }
-  
+      &:hover {}
+
       &.active {
-       
-        width: 350px;
+
+        width: 92vw;
+        height: 270px;
+      }
+    }
+  }
+}
+
+@include md {
+
+  .reference {
+
+    .content-card {
+
+      &:hover {}
+
+      &.active {
+
+        width: 80vw;
         height: 270px;
       }
     }

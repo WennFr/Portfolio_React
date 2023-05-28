@@ -12,7 +12,8 @@
         background-color: $color-dark-2;
         border-radius: 40px;
         height: auto;
-        width: 1000px;
+        // width: 1000px;
+        width: 65vw;
         border: thin solid $color-theme;
         box-shadow: 0 0 3px 1px $color-dark-2;
 
@@ -60,6 +61,8 @@
         }
         .content-card {
         width: 90%;
+        width: 98vw;
+
           
             &:hover {
              
@@ -72,7 +75,8 @@
                 }
     
                 .text {
-                    text-align: center;
+                    margin-left: 1rem;
+                    text-align: left ;
     
                     p {
                         font-size: 0.9em;

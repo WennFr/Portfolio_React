@@ -127,7 +127,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
 
   .portfolio {
     .timeline {
@@ -158,7 +158,9 @@
         .timeline-content {
           margin-right: 0;
           margin-left: 0;
-          width: 350px;          
+          width: 350px;
+        width: 95vw;
+
 
 
 
@@ -184,6 +186,8 @@
           text-align: center;
           margin-right: 16rem;
           margin-left: 0px;
+          justify-content: flex-start;
+          align-self: baseline;
         }
 
 
