@@ -22,7 +22,8 @@
 
     .image-container {
         @include content-center;
-        width: 40%;
+        width: 25vw;
+        
 
         .main-img-2 {
             object-fit: cover;
@@ -112,10 +113,13 @@
 @media (min-width:992px) and (max-width: 1900px) {
 
     .landing-page {
-        h1 {}
+        h1 {
+            font-size: 2.5em;
+
+        }
 
         .image-container {
-            width: 30%;
+            width: 20vw;
 
         }
 
