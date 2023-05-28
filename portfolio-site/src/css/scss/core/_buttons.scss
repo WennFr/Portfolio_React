@@ -1,8 +1,7 @@
-.btn{
-
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border-radius: 0.3rem;
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
 }
 
 .button-1 {
@@ -15,18 +14,16 @@
   transition: background-color 0.3s ease;
   text-decoration: none;
   width: 150px;
-  
+
   @include content-center;
 
-  i{
+  i {
     margin-bottom: 3px;
   }
 
   &:hover {
     background-color: $color-light-1;
     color: $color-dark-2;
-
-  
   }
 
   &:focus {
@@ -34,7 +31,6 @@
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3);
   }
 }
-
 .button-2 {
   display: inline-block;
   padding: 10px 20px;
@@ -47,17 +43,12 @@
   text-decoration: none;
   @include content-center;
 
-  i{
+  i {
     margin-top: 0.5px;
   }
-
-  
   &:hover {
     background-color: $color-light-1;
     color: $color-dark-2;
-    
-   
-  
   }
 
   &:focus {
@@ -66,9 +57,7 @@
   }
 }
 
-
-
-.next-section-btn{
+.next-section-btn {
   color: $color-light-2;
   font-size: 1.5rem;
 }

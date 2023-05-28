@@ -1,9 +1,10 @@
 .about-me {
     margin-top: 20rem;
+
     .cont {
         @include content-center;
         border-radius: 10px;
-     
+
     }
 
     .content-card {
@@ -17,18 +18,18 @@
         border: thin solid $color-theme;
         box-shadow: 0 0 3px 1px $color-dark-2;
 
-        transition: transform 0.5s ease; 
+        transition: transform 0.5s ease;
 
         &:hover {
             transform: scale(1.01);
-         
+
         }
 
         .body {
             color: $color-light-2;
 
 
-            
+
             h2 {
                 color: $color-light-2;
                 font-weight: 400;
@@ -56,32 +57,43 @@
 
 @include sm {
     .about-me {
-        .cont {
-            
-        }
-        .content-card {
-        width: 90%;
-        width: 98vw;
+        .cont {}
 
-          
-            &:hover {
-             
-            }
-    
+        .content-card {
+            width: 90%;
+            width: 98vw;
+
+            &:hover {}
+
             .body {
-    
-                h2 {
-               
-                }
-    
+
+                h2 {}
+
                 .text {
                     margin-left: 1rem;
-                    text-align: left ;
-    
+                    text-align: left;
+
                     p {
                         font-size: 0.9em;
-                 
                     }
+                }
+            }
+        }
+    }
+}
+
+@include md {
+    .about-me {
+        .content-card {
+            width: 90vw;
+
+            .body {
+
+                h2 {}
+
+                .text {
+                    margin-left: 1rem;
+                    text-align: left;
                 }
             }
         }

@@ -85,3 +85,20 @@
 
     }
 }
+@include md {
+    .experience {
+        .content-card {
+            width: 90vw;
+            .body {
+
+                h2 {}
+
+                .text {
+                    .icon {}
+                }
+
+            }
+        }
+
+    }
+}

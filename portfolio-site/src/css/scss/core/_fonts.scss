@@ -12,8 +12,6 @@ $font-weight-bold: 700;
 @mixin default-font {
     font-size: 1em;
     font-weight: $font-weight-regular;
-    // font-family: $font-poppins;
-    // font-family: "M Plus 1 Code", sans-serif;
     line-height: $font-lineheight-standard;
 }
 
