@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import ProjectCard from '../partials/ProjectCard'
+import ProjectCard from '../partials/ProjectCard';
+import { techStackIconMapper } from '../utils/techStackIconMapper';
 
 
 const Portfolio = () => {

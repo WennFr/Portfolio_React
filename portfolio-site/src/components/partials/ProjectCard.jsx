@@ -1,6 +1,8 @@
 import React from 'react';
+import { techStackIconMapper } from '../utils/techStackIconMapper';
 
-const ProjectCard = ({project}) => {
+const ProjectCard = ({ project }) => {
+    const techStackIcons = techStackIconMapper(project.techStack);
     return (
         <div class="timeline-row" key={project.id}>
             <div className="timeline-date">
@@ -12,6 +14,9 @@ const ProjectCard = ({project}) => {
                 <p>
                     {project.description}
                 </p>
+                <div className="tech-stack-icons">
+                    {techStackIcons}
+                </div>
                 <div class="git-btn">
                     <a href={project.gitUrl} className="btn btn-outline-light" target="_blank">GitHub &nbsp;<span className="fab fa-github"></span></a>
                 </div>
