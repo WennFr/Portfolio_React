@@ -10,6 +10,8 @@
 
 		public string Month { get; set; }
 
+        public string[] TechStack { get; set; }
+
 		public string GitUrl { get; set; }
 
 		public string? DemoUrl { get; set; }
