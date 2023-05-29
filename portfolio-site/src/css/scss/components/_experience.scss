@@ -67,42 +67,16 @@
 
 @include sm {
     .experience {
-        .cont {}
-
         .content-card {
-
             width: 90%;
             width: 98vw;
-
-            &:hover {}
-
-
-            .body {
-
-                h2 {}
-
-                .text {
-                    .icon {}
-                }
-
-            }
         }
-
     }
 }
 @include md {
     .experience {
         .content-card {
             width: 90vw;
-            .body {
-
-                h2 {}
-
-                .text {
-                    .icon {}
-                }
-
-            }
         }
 
     }

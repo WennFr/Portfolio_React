@@ -51,18 +51,10 @@
 
 @include sm {
     .about-me {
-        .cont {}
-
         .content-card {
             width: 90%;
             width: 98vw;
-
-            &:hover {}
-
             .body {
-
-                h2 {}
-
                 .text {
                     margin-left: 1rem;
                     text-align: left;
@@ -80,11 +72,7 @@
     .about-me {
         .content-card {
             width: 90vw;
-
             .body {
-
-                h2 {}
-
                 .text {
                     margin-left: 1rem;
                     text-align: left;

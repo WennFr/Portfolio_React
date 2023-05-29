@@ -89,11 +89,7 @@
 @include sm {
 
   .reference {
-
     .content-card {
-
-      &:hover {}
-
       &.active {
 
         width: 92vw;
@@ -106,13 +102,9 @@
 @include md {
 
   .reference {
-
     .content-card {
-
-      &:hover {}
-
       &.active {
-
+        
         width: 80vw;
         height: 270px;
       }

@@ -45,7 +45,6 @@ const Contact = () => {
                             </div>
                             <div className="col-12 py-3">
                                 <div className="g-recaptcha" data-sitekey="6LfR5SMjAAAAAAN-6DjqHeIwS7_ls9eWnZYOOYwN">
-                                    {/* reCAPTCHA goes here */}
                                 </div>
                             </div>
                             <div className="col-12 py-1">
