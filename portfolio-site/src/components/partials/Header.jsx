@@ -8,7 +8,7 @@ const Header = () => {
   const { weatherData, location } = useWeatherData();
   const { temperature, weatherCode } = weatherData;
   const weatherIcon = getWeatherIcon(weatherCode);
-
+  const [activeLink, setActiveLink] = useState('');
   function headerToggle() {
     var links = document.getElementById("links");
     if (links.style.display === "none") {
@@ -53,7 +53,7 @@ const Header = () => {
         </div>
 
         <nav id="links" className="links">
-          <NavLink className="link" onClick={() => scrollToSection('about-me')} to="#">
+          <NavLink className="link" onClick={() => scrollToSection('about-me')} to="">
             Om Mig
           </NavLink>
           <NavLink className="link" onClick={() => scrollToSection('experience')} to="#">
@@ -66,7 +66,7 @@ const Header = () => {
             Referenser
           </NavLink>
           <NavLink className="link" onClick={() => scrollToSection('contact')} to="#">
-            <span>Kontakt</span>
+            Kontakt
           </NavLink>
         </nav>
         <div id="toggle-icon" className="toggle-button">

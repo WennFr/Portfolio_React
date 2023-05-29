@@ -40,7 +40,14 @@ header {
         transition: color 0.15s;
         margin: 10px 13px;
 
+
+        &:hover
+        {
+          color: $color-theme;
+        }
       }
+ 
+      
     }
 
     .toggle-button {
