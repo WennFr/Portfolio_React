@@ -30,9 +30,15 @@
 
         .icon{
           color: $color-light-2;
-          padding-bottom: 1.25rem;
+          padding-bottom: 2rem;
           font-size: 2em;
           font-weight: 200;
+
+          &:hover{
+            color: $color-theme;
+            transition-duration: 0.2s;
+        }
+
 
         }
 
@@ -69,6 +75,9 @@
 
         h3 {
           padding-bottom: 1rem;
+        }
+        p{
+          align-self: center;
         }
       }
 

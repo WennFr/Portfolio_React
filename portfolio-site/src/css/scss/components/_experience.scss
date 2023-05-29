@@ -50,6 +50,11 @@
                     font-weight: 400;
                     flex-basis: 33.33%;
 
+                    &:hover{
+                        color: $color-theme;
+                        transition-duration: 0.2s;
+                    }
+
                 }
 
                 padding-bottom: 1rem;

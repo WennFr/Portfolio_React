@@ -34,7 +34,7 @@ const Footer = () => {
                                 <i className="fab fa-linkedin"></i>
                             </NavLink>
                             <NavLink
-                                to="https://github.com/WennFr?tab=repositories"
+                                to="https://github.com/WennFr"
                                 className="media-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
