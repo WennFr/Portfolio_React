@@ -12,3 +12,30 @@ span {
 }
 
 
+.back-to-top {
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+
+
+  &.hide {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    @include content-center;
+
+    i {
+      font-size: 18px;
+    }
+  }
+}

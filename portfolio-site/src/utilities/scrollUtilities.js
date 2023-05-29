@@ -9,3 +9,15 @@ export const scrollToSection = (sectionId) => {
     }, 100); 
   }
 };
+
+export const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+export const toggleBackToTopButton = (updateShowButton) => {
+  if (window.pageYOffset > 100) {
+    updateShowButton(true);
+  } else {
+    updateShowButton(false);
+  }
+};

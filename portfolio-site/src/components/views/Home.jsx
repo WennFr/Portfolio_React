@@ -9,6 +9,7 @@ import Portfolio from './Portfolio'
 import Reference from './Reference'
 import Contact from './Contact'
 import Footer from '../partials/Footer'
+import BackToTop from '../partials/BackToTop'
 
 
 
@@ -27,6 +28,7 @@ const Home = () => {
             <Reference id="reference" />
             <CardLine />
             <Contact id="contact" />
+            <BackToTop />
             <Footer />
         </>
     )
