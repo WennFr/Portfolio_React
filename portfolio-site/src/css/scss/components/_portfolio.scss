@@ -194,12 +194,11 @@
         }
 
         .timeline-date {
-          left: 25%;
+          left: auto;
           text-align: center;
-          margin-right: 16rem;
-          margin-left: 0px;
+          margin-left: 2rem;
           justify-content: flex-start;
-          align-self: baseline;
+          align-self:first baseline;
         }
 
 
@@ -226,6 +225,8 @@
       .timeline-row {
 
         .timeline-content {
+          width: 99vw;
+
         }
       }
     }

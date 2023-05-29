@@ -6,6 +6,6 @@ export const scrollToSection = (sectionId) => {
 
     setTimeout(() => {
       window.scrollTo({ top: sectionTop, behavior: 'smooth' });
-    }, 100); // Add a small delay (e.g., 100 milliseconds)
+    }, 100); 
   }
 };
