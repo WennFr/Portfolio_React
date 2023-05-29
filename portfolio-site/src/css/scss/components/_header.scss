@@ -97,12 +97,21 @@ header {
         gap: 0.5rem;
         margin-left: 0px;
         display: none;
-        
 
-        .link {
-        }
+
+        .link {}
       }
     }
   }
 
+}
+
+@media (max-width: 750px) {
+  header {
+    .cont {
+      .hide {
+        display: none;
+      }
+    }
+  }
 }
