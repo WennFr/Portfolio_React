@@ -39,7 +39,7 @@ namespace ProjectInformationAPI.Data
 					Description = "En fiktiv onlineklädesbutik formad efter en designmall.",
 					Year = "2023",
 					Month = "Apr",
-                    TechStack = new string[]{"HTML", "CSS", "JavaScript", "SCSS"},
+                    TechStack = new string[]{"Html", "CSS", "JavaScript", "SCSS"},
                     GitUrl = "https://github.com/WennFr/Case_fixxo_FW",
 					DemoUrl = "",
 					Image = ""
