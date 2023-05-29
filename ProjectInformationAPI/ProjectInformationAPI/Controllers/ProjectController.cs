@@ -10,7 +10,7 @@ namespace ProjectInformationAPI.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	[EnableCors("AllowLocalhost")]
+	[EnableCors("AllowLocalhostAndAzure")]
 	public class ProjectController : ControllerBase
 	{
 		private readonly List<ProjectData> _projects;

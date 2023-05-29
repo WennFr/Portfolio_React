@@ -10,10 +10,10 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddCors(options =>
 {
-	options.AddPolicy("AllowLocalhost",
+	options.AddPolicy("AllowLocalhostAndAzure",
 		builder =>
 		{
-			builder.WithOrigins("http://localhost:3000")
+			builder.WithOrigins("http://localhost:3000", "https://frederick-portfolio.azurewebsites.net")
 				.AllowAnyHeader()
 				.AllowAnyMethod();
 		});
