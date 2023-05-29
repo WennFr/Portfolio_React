@@ -21,6 +21,23 @@
       position: relative;
       margin-bottom: 30px;
 
+
+      .tech-stack-icons{
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: center;
+        gap: 20px;
+
+        .icon{
+          color: $color-light-2;
+          padding-bottom: 1.25rem;
+          font-size: 2em;
+          font-weight: 200;
+
+        }
+
+      }
+
       .timeline-date {
         position: absolute;
         right: 50%;
@@ -47,6 +64,7 @@
         justify-content: start;
         flex-direction: column;
         text-align: left;
+        border-radius: 1%;
 
 
         h3 {
@@ -78,7 +96,6 @@
       }
 
       p {
-        margin-bottom: 30px;
         line-height: 150%;
       }
     }
