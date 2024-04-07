@@ -3,17 +3,20 @@ import React, { useState } from 'react';
 
 const references = [
     {
-        name: 'Referens 1',
-        quote: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+        name: 'Madeleine Kalin',
+        profession: "Teknisk projektledare, Sublime",
+        quote: '"Frederick integrerades väl i vårt team och har visat god kommunikationsförmåga, bidragit till en positiv arbetsmiljö och främjat samarbete inom organisationen."',
     },
     {
-        name: 'Referens 2',
-        quote: '"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."',
+        name: 'Emma Björner',
+        profession: "Senior expert, IKED",
+        quote: '"Frederick har utfört sitt arbete med hög effektivitet och stor noggrannhet. Under sin tid vid IKED uppvisade han ett starkt engagemang, nyfikenhet och förmåga att snabbt sätta sig in i nya uppgifter"',
     },
 
     {
-        name: 'Referens 3',
-        quote: '"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
+        name: 'Thomas Andersson',
+        profession: "Ordförande, IKED",
+        quote: '"Frederick har varit en upskattad medarbetare och vi är glada att ge honom våra allra bästa rekommendationer för uppgifter i ett internationellt såväl nationellt sammanhang."',
     },
 
     
@@ -41,11 +44,13 @@ const Reference = () => {
           >
             {isActive && (
               <div className="body">
-                <h2>Referenser</h2>
+                <h2>Referenser</h2> 
                 <h3>{reference.name}</h3>
+                <p class="profession">{reference.profession}</p>
                 <div className="text">
                   <p>{reference.quote}</p>
                 </div>
+                
                 <div className="progress-bar-container">
               {references.map((_, i) => (
                 <div

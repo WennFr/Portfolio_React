@@ -20,6 +20,9 @@ export const useWeatherData = () => {
           if (locationResponse.ok) {
             const locationData = await locationResponse.json();
         
+            const temp = false;
+            if(temp)
+            {
             const area = locationData.results[0].address_components.find(component =>
                 component.types.includes('administrative_area_level_1')
               )?.long_name;
@@ -29,6 +32,8 @@ export const useWeatherData = () => {
               )?.long_name;
 
             setLocation(`${area}, ${country}`);
+          }
+
           } else {
             throw new Error('Error fetching location');
           }
@@ -45,7 +50,10 @@ export const useWeatherData = () => {
             throw new Error('Error fetching weather');
           }
         });
-      } else {
+      } 
+      
+      
+      else {
         const latitude = 59.30;
         const longitude = 18.14;
         setLocation('Stockholm');

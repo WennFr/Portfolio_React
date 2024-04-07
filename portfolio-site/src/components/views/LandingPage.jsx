@@ -13,7 +13,7 @@ const LandingPage = () => {
             <section id='landing-page' className='landing-page'>
                 <div className='container'>
                     <h1>Frederick Wennborg</h1>
-                    <p>.NET student på KYH. </p>
+                    <p>Software Developer</p>
                     <div className='image-container'>
                         <img className='main-img-2' src={MainImg2} alt="Main Image" />
                     </div>

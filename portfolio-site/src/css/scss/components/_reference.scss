@@ -7,7 +7,6 @@
   }
 
   .content-card {
-
     top: 0;
     left: 0;
     opacity: 0;
@@ -31,14 +30,19 @@
     }
 
     .body {
+    height: 300px;
+      width: 99%;
       color: $color-light-2;
+      text-align: center;
+
+      .profession{
+        font-style: italic;
+      }
 
       .progress-bar-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 1rem;
-        padding-bottom: 1rem;
       }
 
       .progress-bar {
@@ -76,8 +80,8 @@
         text-align: center;
 
         p {
+          height: 100px;
           padding-top: 0.625rem;
-          padding-bottom: 1.25rem;
           font-size: 1em;
           font-weight: 400;
         }
@@ -90,10 +94,18 @@
 
   .reference {
     .content-card {
+      .body{
+        .text{
+          p{
+            height: 130px;
+          }
+        }
+      
+      }
       &.active {
 
         width: 92vw;
-        height: 270px;
+        height: 350px;
       }
     }
   }
@@ -106,7 +118,7 @@
       &.active {
         
         width: 80vw;
-        height: 270px;
+        height: 350px;
       }
     }
   }
