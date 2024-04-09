@@ -21,8 +21,11 @@ export const techStackIconMapper = (techStack) => {
         return <i className="icon devicon-dot-net-plain-wordmark" key={tech}></i>;
       case 'React':
         return <i className="icon devicon-react-original-wordmark" key={tech}></i>;
+        case 'Blazor':
+          return <i className="icon devicon-blazor-original" key={tech}></i>;
       default:
         return null;
+        
     }
   });
 };

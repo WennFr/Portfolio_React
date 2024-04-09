@@ -17,10 +17,7 @@
         transition: transform 0.5s ease;
         backface-visibility: hidden;
 
-        &:hover {
-            transform: scale(1.01);
-
-        }
+      
 
         .body {
             color: $color-light-2;
@@ -34,31 +31,32 @@
                 margin-top: 1rem;
             }
 
-            .text {
+            .icons {
                 padding-top: 1rem;
                 text-align: center;
                 @include content-center;
                 display: flex;
                 flex-wrap: wrap;
 
-                .icon {
-                    color: $color-light-2;
+                .icon-container{
+                    width: 75vh;
                     padding-top: 0.625rem;
                     padding-bottom: 1.25rem;
                     font-size: 5em;
-                    width: 75vh;
                     font-weight: 400;
+                    padding-bottom: 1rem;
                     flex-basis: 33.33%;
 
-                    &:hover{
-                        color: $color-theme;
-                        transition-duration: 0.2s;
+                    .icon {
+                        color: $color-light-2;
+                        
+                        &:hover{
+                            color: $color-theme;
+                            transition-duration: 0.2s;
+                        }
                     }
-
+                    
                 }
-
-                padding-bottom: 1rem;
-
             }
 
         }

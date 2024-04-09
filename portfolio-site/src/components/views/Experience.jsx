@@ -1,8 +1,21 @@
 import React from 'react'
+import { techStackIconMapper } from '../../utilities/techStackIconMapper';
+
+const techStack = [
+    'C#',
+    'ASP .NET',
+    'MSSQL',
+    'Html',
+    'CSS',
+    'SCSS',
+    'Blazor',
+    'JavaScript',
+    'React'
+  ];
 
 
 const Experience = () => {
-
+    const techStackIcons = techStackIconMapper(techStack);
     return (
         <>
             <section id="experience" className='experience'>
@@ -10,20 +23,16 @@ const Experience = () => {
                     <div className="content-card">
                         <div className="body">
                             <h2>Kunskap</h2>
-                            <div className='text'>
-                                <i className="icon devicon-csharp-plain-wordmark"></i>
-                                <i className="icon devicon-dot-net-plain-wordmark"></i>
-                                <i className="icon devicon-microsoftsqlserver-plain-wordmark"></i>
-                                <i className="icon devicon-html5-plain-wordmark"></i>
-                                <i className="icon devicon-css3-plain-wordmark"></i>
-                                <i className="icon fa-brands fa-sass"></i>
-                                <i className="icon devicon-react-original-wordmark"></i>
+                            <div className='icons'>
+                            {techStackIcons.map((icon, index) => (
+                                    <div className='icon-container' key={index}>
+                                        {icon}
+                                    </div>
+                                ))}
                             </div>
-
                         </div>
                     </div>
                 </div>
-
             </section>
         </>
     )
