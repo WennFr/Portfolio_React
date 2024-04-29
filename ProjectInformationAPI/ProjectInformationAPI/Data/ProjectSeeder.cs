@@ -9,7 +9,19 @@ namespace ProjectInformationAPI.Data
 		{
 			var projects = new List<ProjectData>
 			{
-				new ProjectData
+                new ProjectData
+                {
+                    Title = "Portfolio_React",
+                    Description =
+                        "Min portfolio site skapad i React. Projekten hämtas från ett .NET Api i samma lösning",
+                    Year = "2023",
+                    Month = "Juni",
+                    TechStack = new string[]{"React", ".NET", "Html", "CSS", "JavaScript"},
+                    GitUrl = "https://github.com/WennFr/Portfolio_React",
+                    DemoUrl = "",
+                    Image = ""
+                },
+                new ProjectData
 				{
 					Title = "BankManagerApp",
 					Description =
