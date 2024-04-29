@@ -11,6 +11,18 @@ namespace ProjectInformationAPI.Data
 			{
                 new ProjectData
                 {
+                    Title = "SmartApplication",
+                    Description =
+                        "En applikation som simulerar smartenheter och kopplar upp dessa till en kontrollpanell. Byggt i .NET WPF och använder sig av AzureFunctions för kommunikation mellan enhet och kontrollpanell.",
+                    Year = "2023",
+                    Month = "Juni",
+                    TechStack = new string[]{".NET", "XAML", "CSS",},
+                    GitUrl = "https://github.com/WennFr/SmartApplication",
+                    DemoUrl = "",
+                    Image = ""
+                },
+                new ProjectData
+                {
                     Title = "Portfolio_React",
                     Description =
                         "Min portfolio site skapad i React. Projekten hämtas från ett .NET Api i samma lösning",
