@@ -29,7 +29,7 @@ namespace ProjectInformationAPI.Data
                     Year = "2023",
                     Month = "Jun",
                     TechStack = new string[]{"C#"},
-                    GitUrl = "https://github.com/WennFr/CarSimulatorApp?tab=readme-ov-file#description",
+                    GitUrl = "https://github.com/WennFr/CarSimulatorApp",
                     DemoUrl = "",
                     Image = ""
                 },
