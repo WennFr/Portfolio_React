@@ -7,7 +7,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
+x
 builder.Services.AddCors(options =>
 {
 	options.AddPolicy("AllowLocalhostAndAzure",

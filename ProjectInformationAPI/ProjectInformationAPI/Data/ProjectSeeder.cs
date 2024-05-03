@@ -15,9 +15,21 @@ namespace ProjectInformationAPI.Data
                     Description =
                         "En applikation som simulerar smartenheter och kopplar upp dessa till en kontrollpanell. Byggt i .NET WPF och använder sig av AzureFunctions för kommunikation mellan enhet och kontrollpanell.",
                     Year = "2023",
-                    Month = "Juni",
-                    TechStack = new string[]{".NET", "XAML", "CSS",},
+                    Month = "Okt",
+                    TechStack = new string[]{"C#", "XAML", "CSS",},
                     GitUrl = "https://github.com/WennFr/SmartApplication",
+                    DemoUrl = "",
+                    Image = ""
+                },
+                 new ProjectData
+                {
+                    Title = "CarSimulatorApp",
+                    Description =
+                        "Den här applikationen är en enkel bilsimulator skriven i C#. Huvudsyftet med applikationen är att demonstrera välstrukturerad C#-kod med avseende på SRP (Single Responsibility Principle) och att implementera giltiga tester av simuleringens funktionalitet.",
+                    Year = "2023",
+                    Month = "Jun",
+                    TechStack = new string[]{"C#"},
+                    GitUrl = "https://github.com/WennFr/CarSimulatorApp?tab=readme-ov-file#description",
                     DemoUrl = "",
                     Image = ""
                 },
@@ -27,7 +39,7 @@ namespace ProjectInformationAPI.Data
                     Description =
                         "Min portfolio site skapad i React. Projekten hämtas från ett .NET Api i samma lösning",
                     Year = "2023",
-                    Month = "Juni",
+                    Month = "Jun",
                     TechStack = new string[]{"React", ".NET", "Html", "CSS", "JavaScript"},
                     GitUrl = "https://github.com/WennFr/Portfolio_React",
                     DemoUrl = "",
